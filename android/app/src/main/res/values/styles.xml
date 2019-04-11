@@ -13,6 +13,10 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <style name="blueCheckbox" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@android:color/holo_blue_bright</item> <!-- for uncheck state -->
+        <item name="android:textColorSecondary">@android:color/holo_blue_bright</item> <!-- for check state -->
+    </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 

@@ -47,7 +47,8 @@
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:popupBackground="@color/colorPrimaryDark"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorPrimary" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -65,7 +66,8 @@
                     android:imeOptions="actionUnspecified"
                     android:inputType="textPassword"
                     android:maxLines="1"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:textColorHint="@color/colorPrimary" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -87,7 +89,7 @@
     <ImageView
         android:id="@+id/logoImage"
         android:layout_width="match_parent"
-        android:layout_height="160dp"
+        android:layout_height="161dp"
         app:srcCompat="@drawable/microlearn" />
 
 </LinearLayout>

@@ -6,23 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".MainViewer">
 
+    <Button
+        android:id="@+id/backButton2"
+        android:layout_width="125dp"
+        android:layout_height="55dp"
+        android:background="@drawable/glossblackbutton"
+        android:text="@string/action_back"
+        android:textColor="?attr/colorBackgroundFloating"
+        app:layout_constraintBottom_toBottomOf="@+id/Interests"
+        app:layout_constraintEnd_toStartOf="@+id/Interests"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/Interests"
+        tools:background="@drawable/glossblackbutton" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="75dp"
-        android:layout_marginBottom="150dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
-        <WebView
-            android:id="@+id/WebView"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="@drawable/glossbackground"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbars="vertical"
+            android:text="WIKIPEDIA TEXT DISPLAYED HERE. GIT YER WIKIPEDIA TEXT HERE! AND ONLY HERE!"
+            android:textSize="18sp"
+            android:typeface="normal"
+            app:fontFamily="sans-serif"
+            tools:background="@drawable/glossbackground" />
+
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/overlaywhite"
+        android:contentDescription="@string/todo"
+        android:cropToPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/Interests"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/imageHeader" />
 
     <ImageView
         android:id="@+id/imageHeader"
@@ -35,6 +71,107 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/blackglossbackground" />
+
+    <ScrollView
+        android:id="@+id/InterestsScroll"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/Interests"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ScrollContext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cbAutomotive"
+                style="@style/blueCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Automotive"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:theme="@style/blueCheckbox"
+                android:typeface="normal" />
+
+            <CheckBox
+                android:id="@+id/cbScience"
+                style="@style/blueCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:theme="@style/blueCheckbox"
+                android:typeface="normal" />
+
+            <CheckBox
+                android:id="@+id/cbMath"
+                style="@style/blueCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Math"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:theme="@style/blueCheckbox"
+                android:typeface="normal" />
+
+            <CheckBox
+                android:id="@+id/cbFood"
+                style="@style/blueCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:theme="@style/blueCheckbox"
+                android:typeface="normal" />
+
+            <CheckBox
+                android:id="@+id/cbSports"
+                style="@style/blueCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sports"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:theme="@style/blueCheckbox"
+                android:typeface="normal" />
+
+            <CheckBox
+                android:id="@+id/cbNature"
+                style="@style/blueCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nature"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:theme="@style/blueCheckbox"
+                android:typeface="normal" />
+
+            <CheckBox
+                android:id="@+id/cbPeople"
+                style="@style/blueCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="People"
+                android:textColor="@android:color/background_light"
+                android:textStyle="bold"
+                android:theme="@style/blueCheckbox"
+                android:typeface="normal" />
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/Logout"
@@ -54,10 +191,25 @@
         app:layout_constraintTop_toBottomOf="@+id/imageHeader"
         app:layout_constraintVertical_bias="1.0" />
 
+    <Button
+        android:id="@+id/learnMore"
+        android:layout_width="142dp"
+        android:layout_height="32dp"
+        android:background="@drawable/glossblackbutton"
+        android:text="@string/learn_more_button"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/imageHeader"
+        app:layout_constraintVertical_bias="0.00999999" />
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="69dp"
         android:contentDescription="@android:string/no"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,6 +217,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/blackglossbackground" />
 
     <ImageView
@@ -84,44 +237,36 @@
         app:srcCompat="@drawable/microlearn" />
 
     <Button
-        android:id="@+id/Back"
-        android:layout_width="125dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/glossblackbutton"
-        android:text="@string/action_back"
-        android:textColor="@android:color/background_light"
-        android:textColorHighlight="@android:color/darker_gray"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView5" />
-
-    <Button
         android:id="@+id/Interests"
         android:layout_width="155dp"
         android:layout_height="55dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@drawable/glossblackbuttonwide"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/glossblackbutton"
         android:text="@string/action_interests"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/darker_gray"
-        app:layout_constraintEnd_toStartOf="@+id/Settings"
-        app:layout_constraintStart_toEndOf="@+id/Back"
-        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.666" />
 
     <Button
-        android:id="@+id/Settings"
-        android:layout_width="155dp"
+        android:id="@+id/nextButton"
+        android:layout_width="125dp"
         android:layout_height="55dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/glossblackbuttonwide"
-        android:text="@string/action_settings"
-        android:textColor="@android:color/background_light"
-        android:textColorHighlight="@android:color/darker_gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/glossblackbutton"
+        android:text="@string/action_next"
+        android:textColor="?attr/colorBackgroundFloating"
+        app:layout_constraintBottom_toBottomOf="@+id/Interests"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toEndOf="@+id/Interests"
+        app:layout_constraintTop_toTopOf="@+id/Interests"
+        tools:background="@drawable/glossblackbutton" />
 
 </android.support.constraint.ConstraintLayout>
