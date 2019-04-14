@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Animal nutritionist",
+		summary: 'An animal nutritionist is a person who specializes in animal nutrition, which is especially concerned with the dietary needs of animals in captivity: livestock, pets, and animals in wildlife rehabilitation facilities.'+'<br><br>'+"The science of animal nutrition encompasses principles of chemistry (especially biochemistry), physics, mathematics, ethology (animal behavior). An animal nutrition in the food industry may also be concerned with economics and food processing.",
+		links: "https://en.wikipedia.org/wiki/Animal_nutritionist"
+	},
+	{
+		title: "Microgreen",
+		summary: 'Microgreens are a vegetable green, harvested after the Cotyledon leaves have developed, not to be confused with sprouts or shoots, that are used both as a visual and flavor component or ingredient primarily in fine dining restaurants. Fine dining chefs use microgreens to enhance the attractiveness and taste of their dishes with their delicate textures and distinctive flavors. Smaller than “baby greens,” and harvested later than sprouts, microgreens can provide a variety of leaf flavors, such as sweet and spicy. They are also known for their various colors and textures. Among upscale markets, they are now considered a specialty genre of greens that are good for garnishing salads, soups, plates, and sandwiches.'+'<br><br>'+'Edible young greens and grains are produced from various kinds of vegetables, herbs or other plants. They range in size from 1 to 3 inches (2.5 to 7.6 cm), including the stem and leaves. A microgreen has a single central stem which has been cut just above the soil line during harvesting. It has fully developed cotyledon leaves and usually has one pair of very small, partially developed true leaves. The average crop-time for most microgreens is 10–14 days from seeding to harvest.',
+		links: "https://en.wikipedia.org/wiki/Microgreen"
+	},
+	{
+		title: "Fatty acid",
+		summary: "In chemistry, particularly in biochemistry, a fatty acid is a carboxylic acid with a long aliphatic chain, which is either saturated or unsaturated. Most naturally occurring fatty acids have an unbranched chain of an even number of carbon atoms, from 4 to 28.[1] Fatty acids are usually not found in organisms, but instead as three main classes of esters: triglycerides, phospholipids, and cholesterol esters. In any of these forms, fatty acids are both important dietary sources of fuel for animals and they are important structural components for cells.",
+		links: "https://en.wikipedia.org/wiki/Fatty_acid"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

@@ -27,7 +27,7 @@ html {
 
 #container {
 	position: relative;
-	margin: 232px 4em 256px;
+	margin: 232px 3.5em 256px;
 	height: 365px;
 	overflow: auto;
 	min-width: 1150px;
@@ -88,8 +88,8 @@ html {
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: contain;
-	height: 185px;
-	width: 55%;
+	height: 200px;
+	width: 65%;
 	max-width: 690px;
 }
 

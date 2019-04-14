@@ -8,7 +8,16 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	</head>
-	
+	<style>
+mark { 
+	background-color: #4d94ff;
+	color: black;
+	//border-radius: 10px;
+	border-radius: 10px 20px;
+	position: relative;
+	z-index: 3;
+}
+</style>
 	<body>
 
 		<div id="page">
@@ -26,7 +35,7 @@
 				<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNav">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<span class="text-white" id="userDisplay">User failed to load</span>
+							<span class="text-white" id="userDisplay">Welcome</span>
 						</li>
 						<li class="nav-item active ml-3">
 							<button type="button" class="btn btn-info btn-sm gradient" data-toggle="modal" data-target="#exampleModalCenter">Help</button>
@@ -75,6 +84,8 @@
 					
 					<p class="text-center">
 						If you like the summary and would like to read more, feel free to click "Wikipedia Article" to go directly to the original article.
+						<br><br>
+						You can receive up to <strong>5</strong> articles per day to encourage effective learning techniques. Taking the rest of the day off will help you process what you've learned.
 					</p>
 			
 				  </div>
@@ -85,7 +96,19 @@
 			  </div>
 			</div>
 			<!-- Modal End -->
-			
+					
+			<div class="container col-md-3 alert alert-warning alert-dismissible fade show pl-3" role="alert" id="articleLimitAlert" style="display: none; margin-bottom: 10px; padding-top: 4px; padding-bottom: 4px;">
+				<strong>You have reached your article limit for the day.</strong>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close" style="padding: 0; margin-right: 12px; margin-top: 3px;">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="container col-md-3 alert alert-danger alert-dismissible fade show pl-3" role="alert" id="genericArticleAlert" style="display: none; margin-bottom: 10px; padding-top: 4px; padding-bottom: 4px;">
+				<strong>Unable to find article.</strong>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close" style="padding: 0; margin-right: 12px; margin-top: 3px;">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
 						
 			<div class="container" style="margin-top: 50px; margin-bottom: 80px;">
 				<div class="row">
@@ -94,109 +117,109 @@
 				
 					<div class="col-md-3 p-0" id="interests-box" style="max-height: 692px;">
 						
-						<h4 class="text-center p-3 mx-3">Interests</h4>
+						<h4 class="text-center p-3 pt-4 mx-3"><mark class="px-2 pb-3 pt-0">Interests</mark></h4>
 						
 						<form class="d-flex flex-column flex-wrap justify-content-around py-3 px-4" id="users-interests" style="height: 87%;">
 							
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+								<input class="form-check-input" type="checkbox" value="automation" id="defaultCheck1">
 								<label class="form-check-label" for="defaultCheck1">Automation</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Biology</label>
+								<input class="form-check-input" type="checkbox" value="biology" id="defaultCheck2">
+								<label class="form-check-label" for="defaultCheck2">Biology</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Computer Science</label>
+								<input class="form-check-input" type="checkbox" value="computerscience" id="defaultCheck3">
+								<label class="form-check-label" for="defaultCheck3">Computer Science</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Design</label>
+								<input class="form-check-input" type="checkbox" value="design" id="defaultCheck4">
+								<label class="form-check-label" for="defaultCheck4">Design</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Earth</label>
+								<input class="form-check-input" type="checkbox" value="earth" id="defaultCheck5">
+								<label class="form-check-label" for="defaultCheck5">Earth</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Earth Sciences</label>
+								<input class="form-check-input" type="checkbox" value="earthsciences" id="defaultCheck6">
+								<label class="form-check-label" for="defaultCheck6">Earth Sciences</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Electronics</label>
+								<input class="form-check-input" type="checkbox" value="electronics" id="defaultCheck7">
+								<label class="form-check-label" for="defaultCheck7">Electronics</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Engineering</label>
+								<input class="form-check-input" type="checkbox" value="engineering" id="defaultCheck8">
+								<label class="form-check-label" for="defaultCheck8">Engineering</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Entertainment</label>
+								<input class="form-check-input" type="checkbox" value="entertainment" id="defaultCheck9">
+								<label class="form-check-label" for="defaultCheck9">Entertainment</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Film</label>
+								<input class="form-check-input" type="checkbox" value="film" id="defaultCheck10">
+								<label class="form-check-label" for="defaultCheck10">Film</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Food Industry</label>
+								<input class="form-check-input" type="checkbox" value="foodindustry" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Food Industry</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Geography</label>
+								<input class="form-check-input" type="checkbox" value="geography" id="defaultCheck12">
+								<label class="form-check-label" for="defaultCheck12">Geography</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">History of Television</label>
+								<input class="form-check-input" type="checkbox" value="historyoftelevision" id="defaultCheck13">
+								<label class="form-check-label" for="defaultCheck13">History of Television</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Hobbies</label>
+								<input class="form-check-input" type="checkbox" value="hobbies" id="defaultCheck14">
+								<label class="form-check-label" for="defaultCheck14">Hobbies</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Logic</label>
+								<input class="form-check-input" type="checkbox" value="logic" id="defaultCheck15">
+								<label class="form-check-label" for="defaultCheck15">Logic</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Mythology</label>
+								<input class="form-check-input" type="checkbox" value="mythology" id="defaultCheck16">
+								<label class="form-check-label" for="defaultCheck16">Mythology</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Numbers</label>
+								<input class="form-check-input" type="checkbox" value="numbers" id="defaultCheck17">
+								<label class="form-check-label" for="defaultCheck17">Numbers</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Nutrition</label>
+								<input class="form-check-input" type="checkbox" value="nutrition" id="defaultCheck18">
+								<label class="form-check-label" for="defaultCheck18">Nutrition</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Performing Arts</label>
+								<input class="form-check-input" type="checkbox" value="performingarts" id="defaultCheck19">
+								<label class="form-check-label" for="defaultCheck19">Performing Arts</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Physical Exercise</label>
+								<input class="form-check-input" type="checkbox" value="physicalexercise" id="defaultCheck20">
+								<label class="form-check-label" for="defaultCheck20">Physical Exercise</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Popular Culture</label>
+								<input class="form-check-input" type="checkbox" value="popularculture" id="defaultCheck21">
+								<label class="form-check-label" for="defaultCheck21">Popular Culture</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Religion</label>
+								<input class="form-check-input" type="checkbox" value="religion" id="defaultCheck22">
+								<label class="form-check-label" for="defaultCheck22">Religion</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Robotics</label>
+								<input class="form-check-input" type="checkbox" value="robotics" id="defaultCheck23">
+								<label class="form-check-label" for="defaultCheck23">Robotics</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Social Sciences</label>
+								<input class="form-check-input" type="checkbox" value="socialsciences" id="defaultCheck24">
+								<label class="form-check-label" for="defaultCheck24">Social Sciences</label>
 							</div>
 							<div class="form-check w-50">
-								<input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-								<label class="form-check-label" for="defaultCheck1">Visual Arts</label>
+								<input class="form-check-input" type="checkbox" value="visualarts" id="defaultCheck25">
+								<label class="form-check-label" for="defaultCheck25">Visual Arts</label>
 							</div>
 						</form>
 					</div>
@@ -206,29 +229,31 @@
 					<div class="col-md-9">
 						<div class="row" id="card-box">
 							
-							<h4 class="text-center w-100 p-3 mx-3">Articles</h4>
+							<h4 class="text-center w-100 p-3 pt-4 mx-3 mb-0"><mark class="px-2 pb-3 pt-0">Articles</mark></h4>
 							
 							<!-- Carousel Begin -->
 							<div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel" data-interval="false">
+							<!--
 							  <ol class="carousel-indicators">
 								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color:#5D5D5D;"></li>
 								<li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color:#5D5D5D;"></li>
 								<li data-target="#carouselExampleIndicators" data-slide-to="2" style="background-color:#5D5D5D;"></li>
 							  </ol>
-							  <div class="carousel-inner" style="height: 500px;">
+							  -->
+							  <div class="carousel-inner" style="height: 500px; background-color: none;">
 								
 								<div class="carousel-item active">
 								
 								  <div class="card text-center p-0" style="background-color: #f2f2f2;border-width: 0; border-radius: 0;">
 									  <div class="card-body d-flex flex-column justify-content-around align-items-center mx-4">
-										<h5 class="card-subtitle mb-2 text-muted w-100">Microlearning</h5>
-										<p class="card-text w-100">Microlearning deals with relatively small learning units and short-term learning activities. The term is used in e-learning and related fields in the sense of learning processes in mediated environments. Microlearning is a holistic approach for skill based learning and education which deals with relatively small learning units. It involves short-term-focused strategies especially designed for skill based understanding/learning/education. Microlearning refers to micro-perspectives of learning, education, training and skill development. The approaches followed for assessment of microlearning are multidimensional & holistic in nature and need based in particular cases [Patil U.K., 1999] [Patil U.K., 2000]. An ideal instructional approach for many situations especially in higher education for skill development, trainability and employability of learners/students [Patil U.K., 2002]. The technique is capable enough to address challenges associated with slow learners [Patil U.K., 2005]. This learning technique is versatile not only for skill based education but also for sustainable socioeconomic development. Without taking care of micro-perspectives in the context of learning, education, training and skill development, a skill based education cannot be imparted effectively [Patil U.K., 2009].<br><br>In a wide sense, microlearning can be understood as a metaphor which refers to micro aspects of a variety of learning models, concepts and processes.<br><br>"No matter if learning refers to the process of building up and organizing knowledge, to the change of behaviour, of attitudes, of values, of mental abilities, of cognitive structures, of emotional reactions, of action patterns or of societal dimensions, in all cases we have the possibility to consider micro, meso and macro aspects of the various views on more or less persisting changes and sustainable alterations of performances." (Hug 2005, p. 4).<br><br>Depending on frames and domains of reference, micro, meso and macro aspects vary. They are relational concepts. For example, in the context of language learning, one might think of micro aspects in terms of vocabularies, phrases, sentences, and distinguish them from situations and episodes (meso aspects) and socio-cultural specifics or complex semantics (macro aspects). In a more general discourse on learning, one might differentiate between the learning of individuals, group learning or learning of organizations and the learning of generations or societies.<br><br>Furthermore, microlearning marks a transition from common models of learning towards micro perspectives on and the significance of micro dimensions in the process of learning. The microlearning approach is an emergent paradigm, so there are no hard definitions or coherent uses of the term yet. However, the growing focus on microlearning activities can be seen by web users' activities on the subject, who tag their corresponding weblog postings and social bookmarks with the term "microlearning".<br><br>As an instructional technology, microlearning focuses on the design of microlearning activities through micro steps in digital media environments, which already is a daily reality for today's knowledge workers. These activities can be incorporated into learner's daily routines and tasks. Unlike "traditional" e-learning approaches, microlearning often tends towards push technology through push media, which reduces the cognitive load on the learners. Therefore, the selection of micro learning objects and also pace and timing of microlearning activities are of importance for didactical designs.<br><br>Microlearning, in a nutshell, is a digital learning experience designed to be effective, engaging and enjoyable. Microlearning provides bite-sized learning content in stark contrast to the traditional model of learning and thus engagement follows.</p>
-										<a href="https://en.wikipedia.org/wiki/Microlearning" class="card-link mb-4 w-100">Wikipedia Article</a>
+										<h5 class="card-subtitle mb-2 text-muted w-100" id="article-title">Microlearning</h5>
+										<p class="card-text w-100" id="article-summary">Microlearning deals with relatively small learning units and short-term learning activities. The term is used in e-learning and related fields in the sense of learning processes in mediated environments. Microlearning is a holistic approach for skill based learning and education which deals with relatively small learning units. It involves short-term-focused strategies especially designed for skill based understanding/learning/education. Microlearning refers to micro-perspectives of learning, education, training and skill development. The approaches followed for assessment of microlearning are multidimensional & holistic in nature and need based in particular cases [Patil U.K., 1999] [Patil U.K., 2000]. An ideal instructional approach for many situations especially in higher education for skill development, trainability and employability of learners/students [Patil U.K., 2002]. The technique is capable enough to address challenges associated with slow learners [Patil U.K., 2005]. This learning technique is versatile not only for skill based education but also for sustainable socioeconomic development. Without taking care of micro-perspectives in the context of learning, education, training and skill development, a skill based education cannot be imparted effectively [Patil U.K., 2009].<br><br>In a wide sense, microlearning can be understood as a metaphor which refers to micro aspects of a variety of learning models, concepts and processes.<br><br>"No matter if learning refers to the process of building up and organizing knowledge, to the change of behaviour, of attitudes, of values, of mental abilities, of cognitive structures, of emotional reactions, of action patterns or of societal dimensions, in all cases we have the possibility to consider micro, meso and macro aspects of the various views on more or less persisting changes and sustainable alterations of performances." (Hug 2005, p. 4).<br><br>Depending on frames and domains of reference, micro, meso and macro aspects vary. They are relational concepts. For example, in the context of language learning, one might think of micro aspects in terms of vocabularies, phrases, sentences, and distinguish them from situations and episodes (meso aspects) and socio-cultural specifics or complex semantics (macro aspects). In a more general discourse on learning, one might differentiate between the learning of individuals, group learning or learning of organizations and the learning of generations or societies.<br><br>Furthermore, microlearning marks a transition from common models of learning towards micro perspectives on and the significance of micro dimensions in the process of learning. The microlearning approach is an emergent paradigm, so there are no hard definitions or coherent uses of the term yet. However, the growing focus on microlearning activities can be seen by web users' activities on the subject, who tag their corresponding weblog postings and social bookmarks with the term "microlearning".<br><br>As an instructional technology, microlearning focuses on the design of microlearning activities through micro steps in digital media environments, which already is a daily reality for today's knowledge workers. These activities can be incorporated into learner's daily routines and tasks. Unlike "traditional" e-learning approaches, microlearning often tends towards push technology through push media, which reduces the cognitive load on the learners. Therefore, the selection of micro learning objects and also pace and timing of microlearning activities are of importance for didactical designs.<br><br>Microlearning, in a nutshell, is a digital learning experience designed to be effective, engaging and enjoyable. Microlearning provides bite-sized learning content in stark contrast to the traditional model of learning and thus engagement follows.</p>
+										<a href="https://en.wikipedia.org/wiki/Microlearning" class="card-link mb-4" id="article-link">Wikipedia Article</a>
 									  </div>
 									</div>
 									
 								</div>
-								<div class="carousel-item">
+								<div class="carousel-item" style="display: none;">
 								
 								  <div class="card text-center p-0" style="background-color: #f2f2f2;border-width: 0; border-radius: 0;">
 									  <div class="card-body d-flex flex-column justify-content-around align-items-center mx-4">
@@ -247,7 +272,7 @@ The School of Mathematics wishes you a very warm welcome. We hope that you will 
 									</div>
 									
 								</div>
-								<div class="carousel-item">
+								<div class="carousel-item" style="display: none;">
 								
 								  <div class="card text-center p-0" style="background-color: #f2f2f2;border-width: 0; border-radius: 0;">
 									  <div class="card-body d-flex flex-column justify-content-around align-items-center mx-4">
@@ -262,6 +287,7 @@ Mathematics has many facets; though it has a wealth of applications, Mathematics
 									
 								</div>
 							  </div>
+							  <!--
 							  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="width: 5%;">
 								<span class="carousel-control-prev-icon" style="background-color: #5D5D5D; border-radius: 5px;" aria-hidden="true"></span>
 								<span class="sr-only">Previous</span>
@@ -270,6 +296,7 @@ Mathematics has many facets; though it has a wealth of applications, Mathematics
 								<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #5D5D5D; border-radius: 5px;"></span>
 								<span class="sr-only">Next</span>
 							  </a>
+							  -->
 							</div>
 							<!-- Carousel End -->
 							
@@ -277,7 +304,7 @@ Mathematics has many facets; though it has a wealth of applications, Mathematics
 						
 						<!-- Receive Button Section -->
 						<div class="row justify-content-center p-4" id="button-box">
-							<button type="submit" class="btn btn-primary btn-lg" form="users-interests" id="new-article">New Article</button>
+							<button type="submit" class="btn btn-lg" form="users-interests" id="new-article" onclick="fetchArticle(event)" style="background-color: #4d94ff; font-weight: 600;">New Article</button>
 						</div>
 					</div>
 
@@ -294,6 +321,7 @@ Mathematics has many facets; though it has a wealth of applications, Mathematics
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="scripts/main.js"></script>
 	</body>
 

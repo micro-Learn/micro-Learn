@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Nigel A. L. Clarke",
+		summary: "Nigel Andrew Lincoln Clarke (born 20 October 1971) is Minister of Finance and the Public Service of Jamaica. He is a Jamaican Member of Parliament, company director, business executive and statesman. He has served as Chairman or director of over 20 Jamaican public and private sector economic enterprises. His public sector directorships have included the Bank of Jamaica[1] (Jamaica’s central bank and financial services regulator); Chairman of the Port Authority of Jamaica (the regulator of Jamaica’s ports and the developer and owner of Jamaica’s cargo and cruise ports); Chairman of the National Housing Trust (Jamaica’s state-owned mortgage lender and housing developer)[2][3] and Chairman of the HEART Trust NTA (Jamaica’s largest tertiary level vocational training and certification institution).[4] In 2016, Dr. Clarke was appointed by the Most Hon. Andrew Holness, Prime Minister of Jamaica, to serve as Jamaica’s Ambassador-at-Large for Economic Affairs within the Office of the Prime Minister.[5][6] Ambassador Clarke previously served as a Senator in the Upper House of the Jamaican parliament between 2013 and 2015."+'<br><br>'+"Prior to his government service, Clarke served as Vice Chairman of the Musson Group, having served previously as Chief Operating Officer and Chief Financial Officer of the Group and as Chief Executive Officer of its major subsidiaries. Clarke played an integral executive leadership role in the expansion of the Musson Group from a substantially Jamaican base to having operations and subsidiaries in over 30 countries with over US$1 billion in revenues and market leading businesses in telecommunications, information technology, consumer goods and food manufacturing.[7] The Musson Group is a leading Jamaica-based multinational with four associated companies that are listed on the Jamaica Stock Exchange and over 50 other privately held subsidiaries and associated companies. Clarke’s executive business experience spanned leadership of transnational mergers and acquisitions, corporate leadership, business development and emerging market business leadership."+'<br><br>'+"Clarke is married and has two children. Clarke attended St. Richards Primary School in Kingston and graduated from Munro College in St. Elizabeth Jamaica where he was awarded the Jamaica Independent Scholarship, for study at the University of the West Indies. He graduated from the University of the West Indies with a degree in Mathematics and Computer Science where he received First Class Honours and won the prize for the best degree with the highest marks among students in the Faculty of Natural Sciences across all campuses of UWI in Jamaica, Trinidad and Barbados. He was awarded the Commonwealth Scholarship to attend Linacre College, Oxford University where he earned an M.Sc. in Applied Statistics. In his thesis he examined volatility on the Jamaica Stock Exchange. He subsequently won the Rhodes Scholarship and earned a Doctor of Philosophy degree in Mathematics (Numerical Analysis) from Oxford University (also at Linacre College).",
+		links: "https://en.wikipedia.org/wiki/Nigel_A._L._Clarke"
+	},
+	{
+		title: "Nuclear computation",
+		summary: "Nuclear computation is a type of computation which allows threads to either spawn new threads or converge many threads to one. The aim of nuclear computation is to take advantage of threading abilities of modern multi-core processors where the trend is to increase their hardware ability to compute more threads then their earlier generation processors."+'<br><br>'+"Nuclear computation focuses on real time processing for things like multimedia such as processing audio where a real time deadline (the sample rate in Hz) exists. For that reason it should not block and computational processes which alter shared memory must be atomic (excuted in one clock cycle without locking)."+'<br><br>'+"Nuclear computation allows a computational thread to use thread fission to turn one thread into many or thread fusion to turn many threads into one.",
+		links: "https://en.wikipedia.org/wiki/Nuclear_computation"
+	},
+	{
+		title: "Virtual environment",
+		summary: 'Any networked application that permits both interaction with the computing environment and the work of other users. Email, chat, web-based document sharing applications are all examples of virtual environments. Simply put, it is a networked common operating space. Once the fidelity of the virtual environment is such that it "creates a psychological state in which the individual perceives himself or herself as existing within the virtual environment" (Blascovich, 2002, pg 129) then the virtual environment (VE) had progressed into the realm of immersive virtual environments (IVEs).',
+		links: "https://en.wikipedia.org/wiki/Virtual_environment"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

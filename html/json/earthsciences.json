@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Speleology",
+		summary: "Speleology is the scientific study of caves and other karst features, as well as their make-up, structure, physical properties, history, life forms, and the processes by which they form (speleogenesis) and change over time (speleomorphology). The term speleology is also sometimes applied to the recreational activity of exploring caves, but this is more properly known as caving or potholing, or (not usually by participants) by the uncommon American term spelunking. Speleology and caving are often connected, as the physical skills required for in situ study are the same."+'<br><br>'+"Speleology is a cross-disciplinary field that combines the knowledge of chemistry, biology, geology, physics, meteorology, and cartography to develop portraits of caves as complex, evolving systems.",
+		links: "https://en.wikipedia.org/wiki/Speleology"
+	},
+	{
+		title: "Cascades Volcano Observatory",
+		summary: "The David A. Johnston Cascades Volcano Observatory (CVO) is a volcano observatory that monitors volcanoes in the northern Cascade Range. It was established in the summer of 1980, after the eruption of Mount St. Helens.[1] The observatory is named for United States Geological Survey (USGS) volcanologist David A. Johnston, who was swept away in the Mount St. Helens eruption on the morning of May 18, 1980.[2] The observatory's current territory covers Oregon, Washington, and Idaho. The Cascade Range's extent includes northern California, and Cascade volcanoes in that state, such as Mount Shasta and Lassen Peak, previously fell under the CVO's jurisdiction. However, these volcanoes now fall under the jurisdiction of the California Volcano Observatory (CalVO), formed in February 2012 and based in Menlo Park, California, which monitors and researches volcanic activity throughout California and Nevada."+'<br><br>'+"The Cascades Volcano Observatory is part of the USGS, a scientific agency of the United States government.[4] It is located in Vancouver, Washington in the Portland, Oregon metropolitan area.",
+		links: "https://en.wikipedia.org/wiki/Cascades_Volcano_Observatory"
+	},
+	{
+		title: "Weather and climate",
+		summary: 'There is often confusion between weather and climate. Weather is the condition of the atmosphere at a particular place over a short period of time, whereas climate refers to the weather pattern, using statistical data, of a place over a long enough period to yield meaningful averages.'+'<br><br>'+"Climatology studies climate, meteorology is the study of weather; both are atmospheric sciences. Climate is an important physical element because it indicates the atmospheric condition of heat, moisture and circulation; it plays a dominant role in shaping vegetation and soil; and it ultimately affects all forms of life, as a result of the very definition of the word, which is a scientific prediction, based on evidentiary statistics, sustained over a long period.",
+		links: "https://en.wikipedia.org/wiki/Weather_and_climate"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Planetary management",
+		summary: "Planetary management is intentional global-scale management of Earth's biological, chemical and physical processes and cycles (water, carbon, nitrogen, sulfur, phosphorus, and others). Planetary management also includes managing humanityâ€™s influence on planetary-scale processes.[1] Effective planetary management aims to prevent destabilisation of Earth's climate, protect biodiversity and maintain or improve human well-being. More specifically, it aims to benefit society and the global economy, and safeguard the ecosystem services upon which humanity depends - global climate, freshwater supply, food, energy, clean air, fertile soil, pollinators, and so on."+'<br><br>'+"The term was popularized three years later by the book AntiPatterns, which extended its use beyond the field of software design to refer informally to any commonly reinvented but bad solution to a problem. Examples include analysis paralysis, cargo cult programming, death march, groupthink and vendor lock-in."+'<br><br>'+'Because of the sheer complexity and enormous scope of the task, it remains to be seen whether planetary management is a feasible paradigm for maintaining global sustainability. The concept currently has defenders and critics on both sides: environmentalist David W. Orr questions whether such a task can be accomplished with human help and technology or without first examining the underlying human causes,[2] while geographer Vaclav Smil acknowledges that "the idea of planetary management may seem preposterous to many, but at this time in history there is no rational alternative".',
+		links: "https://en.wikipedia.org/wiki/Planetary_management"
+	},
+	{
+		title: "Earth's circumference",
+		summary: "Earth's circumference is the distance around the Earth, either around the equator (40,075.017 km [ 24,901.461 mi ][1]) or around the poles (40,007.86 km [ 24,859.73 mi ][2])."+'<br><br>'+"Measurement of Earth's circumference has been important to navigation since ancient times. It was first calculated by Eratosthenes, which he did by comparing altitudes of the mid-day sun at two places a known north–south distance apart.[3] In the Middle Ages, Al Biruni calculated a more accurate version, becoming the first person to perform the calculation based on data from a single location."+'<br><br>'+"In modern times, Earth's circumference has been used to define fundamental units of measurement of length: the nautical mile in the seventeenth century and the metre in the eighteenth. Earth's polar circumference is very near to 21,600 nautical miles because the nautical mile was intended to express 1/60TH of a degree of latitude (i.e. 60 × 360), which is 21,600 partitions of the polar circumference. The polar circumference is even closer to 40,000 kilometres because the metre was originally defined to be one 10-millionth the distance from pole to equator. The physical length of each unit of measure has remained close to what it was determined to be at the time, but the precision of measuring the circumference has improved since then."+'<br><br>'+,"Treated as a sphere, determining Earth's circumference would be its single most important measurement[4] (Earth actually deviates from a sphere by about 0.3% as characterized by flattening).",
+		links: "https://en.wikipedia.org/wiki/Earth%27s_circumference"
+	},
+	{
+		title: "Inverted Earth",
+		summary: 'Inverted Earth is an imaginative concept in which the land and bodies of water are swapped with land becoming body of water and body of water becoming land. The current Earth comprises 29% land and 71% water, while Inverted Earth comprises 71% land and 29% water. On the inverted Earth, all the land are connected around the Earth, so people can walk to any point on the surface. When inverting the Earth, lakes become islands while rivers become a long, narrow strip of land. The mountains on real Earth would be trenches on Inverted Earth and vice versa. One of the prominent geological features on Inverted Earth is the Marianas Mountains, which would have the highest peak ("Challenger Peak" or "Mount Challenger") on Earth, even higher than Mount Everest. Another feature countering the last sentence is the Himalayas Trench, in which the Everest Deep is the deepest point on Inverted Earth.'+'<br><br>'+"The world climate on Inverted Earth would be much different than on the present Earth. Since bodies of water cover lot less area on top with tremendous distances from water, the amount of precipitation on Inverted Earth would be considerably less and deserts would cover much of the land area. Due to less precipitation, life would be more challenging to take hold.",
+		links: "https://en.wikipedia.org/wiki/Inverted_Earth"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

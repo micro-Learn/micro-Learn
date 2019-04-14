@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Concrete number",
+		summary: 'A concrete number or numerus numeratus is a number associated with the things being counted, in contrast to an abstract number or numerus numerans which is a number as a single entity. For example, "five apples" and "half of a pie" are concrete numbers, while "five" and "one half" are abstract numbers. In mathematics the term "number" is usually taken to mean an abstract number. A denominate number is a type of concrete number with a unit of measure attached with it. For example, "5 inches" is a denominate number because it has the unit inches after it.',
+		links: "https://en.wikipedia.org/wiki/Concrete_number"
+	},
+	{
+		title: "Illegal number",
+		summary: "An illegal number is a number that represents information which is illegal to possess, utter, propagate, or otherwise transmit in some legal jurisdiction. Any piece of digital information is representable as a number; consequently, if communicating a specific set of information is illegal in some way, then the number may be illegal as well.",
+		links: "https://en.wikipedia.org/wiki/Illegal_number"
+	},
+	{
+		title: "Fuzzy number",
+		summary: "A fuzzy number is a generalization of a regular, real number in the sense that it does not refer to one single value but rather to a connected set of possible values, where each possible value has its own weight between 0 and 1[1]. This weight is called the membership function. A fuzzy number is thus a special case of a convex, normalized fuzzy set of the real line.[2] Just like Fuzzy logic is an extension of Boolean logic (which uses absolute truth and falsehood only, and nothing in between), fuzzy numbers are an extension of real numbers. Calculations with fuzzy numbers allow the incorporation of uncertainty on parameters, properties, geometry, initial conditions, etc.",
+		links: "https://en.wikipedia.org/wiki/Fuzzy_number"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Artificial muscle",
+		summary: 'Artificial muscle is a generic term used for actuators, materials or devices that mimic natural muscle and can reversibly contract, expand, or rotate within one component due to an external stimulus (such as voltage, current, pressure or temperature).[1] [2]The three basic actuation responses - contraction, expansion, and rotation - can be combined together within a single component to produce other types of motions (e.g. bending, by contracting one side of the material while expanding the other side). Conventional motors and pneumatic linear or rotary actuators do not qualify as artificial muscles, because there is more than one component involved in the actuation.'+'<br><br>'+'Due to their high flexibility, versatility and power-to-weight ratio compared with traditional rigid actuators, artificial muscles have the potential to be a highly disruptive emerging technology. Though currently in limited use, the technology may have wide future applications in industry, medicine, robotics and many other fields.',
+		links: "https://en.wikipedia.org/wiki/Artificial_muscle"
+	},
+	{
+		title: "Manual override",
+		summary: "A manual override (MO) or manual analog override (MAO) is a mechanism wherein control is taken from an automated system and given to the user. For example, a manual override in photography refers to the ability for the human photographer to turn off the automatic aperture sizing, automatic focusing, or any other automated system on the camera."+'<br><br>'+"Some manual overrides can be used to veto an automated system's judgment when the system is in error. An example of this is a printer's ink level detection: in one case, a researcher found that when he overrode the system, up to 38% more pages could be printed at good quality by the printer than the automated system would have allowed."+'<br><br>'+'Automated systems are becoming increasingly common and integrated into everyday objects such as automobiles and domestic appliances. This development of ubiquitous computing raises general issues of policy and law about the need for manual overrides for matters of great importance such as life-threatening situations and major economic decisions. The loyalty of such autonomous devices then becomes an issue. If they follow rules installed by the manufacturer or required by law and refuse to cede control in some situations then the owners of the devices may feel disempowered, alienated and lacking true ownership.',
+		links: "https://en.wikipedia.org/wiki/Manual_override"
+	},
+	{
+		title: "Self-driving car",
+		summary: 'A self-driving car, also known as a robot car, autonomous car, or driverless car,[1][2] is a vehicle that is capable of sensing its environment and moving with little or no human input.'+'<br><br>'+'Autonomous cars combine a variety of sensors to perceive their surroundings, such as radar, Lidar, sonar, GPS, odometry and inertial measurement units. Advanced control systems interpret sensory information to identify appropriate navigation paths, as well as obstacles and relevant signage.',
+		links: "https://en.wikipedia.org/wiki/Self-driving_car"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

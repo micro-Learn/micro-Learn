@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Assault course",
+		summary: "An assault course (also called trim trail) is a special sort of trail that combines running and exercising. It was more popular in the 1970s than it is now. It is heavily used in military training. The prime use is to evaluate progress and weaknesses within the team involved.",
+		links: "https://en.wikipedia.org/wiki/Assault_course"
+	},
+	{
+		title: "Exercise intolerance",
+		summary: "Exercise intolerance is a condition of inability or decreased ability to perform physical exercise at what would be considered to be the normally expected level or duration. It also includes experiences of unusually severe post-exercise pain, fatigue, nausea, vomiting or other negative effects. Exercise intolerance is not a disease or syndrome in and of itself, but can result from various disorders."+'<br><br>'+"In most cases, the specific reason that exercise is not tolerated is of considerable significance when trying to isolate the cause down to a specific disease. Dysfunctions involving the pulmonary, cardiovascular or neuromuscular systems have been frequently found to be associated with exercise intolerance, with behavioural causes also playing a part.",
+		links: "https://en.wikipedia.org/wiki/Exercise_intolerance"
+	},
+	{
+		title: "Pilates",
+		summary: 'Pilates is a physical fitness system developed in the early 20th century by Joseph Pilates, after whom it was named. Pilates called his method "Contrology".[2] It is practiced worldwide, especially in Western countries such as Canada, the United States and the United Kingdom. As of 2005, there were 11 million people practicing the discipline regularly and 14,000 instructors in the United States.'+'<br><br>'+"There is only limited evidence to support the use of Pilates to alleviate low back pain,[4] or improve balance in elderly people. Evidence from studies show that while Pilates improves balance, limited data exists on whether this impacts on falls by the elderly. [5] Pilates has not been shown to be an effective treatment for any medical condition.[6] There is some evidence regular Pilates sessions can help muscle conditioning in healthy adults, when compared to doing no exercise.",
+		links: "https://en.wikipedia.org/wiki/Pilates"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

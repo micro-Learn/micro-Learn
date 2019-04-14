@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Acousto-electronics",
+		summary: "Acousto-electronics (also spelled 'Acoustoelectronics') is a branch of physics, acoustics and electronics that studies interactions of ultrasonic and hypersonic waves in solids with electrons and with electro-magnetic fields. Typical phenomena studied in acousto-electronics are acousto-electric effect and also amplification of acoustic waves by flows of electrons in piezoelectric semiconductors, when the drift velocity of the electrons exceeds the velocity of sound. The term 'acousto-electronics' is often understood in a wider sense to include numerous practical applications of the interactions of electro-magnetic fields with acoustic waves in solids. In particular, these are signal processing devices using surface acoustic waves (SAW), different sensors of temperature, pressure, humidity, acceleration, etc.",
+		links: "https://en.wikipedia.org/wiki/Acousto-electronics"
+	},
+	{
+		title: "Nuclear electronics",
+		summary: "Nuclear electronics is a subfield of electronics concerned with the design and use of high-speed electronic systems for nuclear physics and elementary particle physics research, and for industrial and medical use."+'<br><br>'+"Essential elements of such systems include fast detectors for charged particles, discriminators for separating them by energy, counters for counting the pulses produced by individual particles, fast logic circuits (including coincidence and veto gates), for identification of particular types of complex particle events, and pulse height analyzers (PHAs) for sorting and counting gamma rays or particle interactions by energy, for spectral analysis.",
+		links: "https://en.wikipedia.org/wiki/Nuclear_electronics"
+	},
+	{
+		title: "Hydraulic analogy",
+		summary: 'The electronic-hydraulic analogy (derisively referred to as the drain-pipe theory by Oliver Lodge) [1] is the most widely used analogy for "electron fluid" in a metal conductor. Since electric current is invisible and the processes at play in electronics are often difficult to demonstrate, the various electronic components are represented by hydraulic equivalents. Electricity (as well as heat) was originally understood to be a kind of fluid, and the names of certain electric quantities (such as current) are derived from hydraulic equivalents. As with all analogies, it demands an intuitive and competent understanding of the baseline paradigms (electronics and hydraulics).',
+		links: "https://en.wikipedia.org/wiki/Hydraulic_analogy"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

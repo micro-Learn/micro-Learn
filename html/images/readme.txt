@@ -1,0 +1,1 @@
+contain all the images that you use on your site.
