@@ -33,7 +33,41 @@ function setUserDisplay()
     document.getElementById("userDisplay").innerHTML = username;
 }
 
-function fetchNewArticle(event)
+function identifyUserInterests(event)
+{
+    event.preventDefault();
+	
+	var usersInterests = [];
+	var count = 0;
+	var checkedValue = null;
+	var interest = null;
+	
+	var inputElements = document.getElementsByClassName('form-check-input');
+	for ( var i=0; inputElements[i]; i++ ) {
+		if (inputElements[i].checked) {
+			checkedValue = inputElements[i].value;
+			interest.number = i;
+			interest.name = checkedValue;
+			usersInterests.push(interest);
+			count++;
+		}
+	}
+	
+	if (count === 0) {
+		return false;
+	}
+	
+	var index = Math.floor(Math.random() * count);
+	var interestCategory = usersInterests[index];
+	
+	var jsonSendObject = new Object();
+	jsonSendObj.interest_id = interestCategory.number;
+	jsonSendObj.interest_name = interestCategory.name;
+	
+	fetchNewArticle(jsonSendObj);
+}
+
+function fetchNewArticle(jsonSendObj)
 {
 	var url = APIRoot + '/fetchArticle' + fileExtension;
     var xhr = new XMLHttpRequest();
@@ -46,19 +80,14 @@ function fetchNewArticle(event)
             if (this.readyState == 4 && this.status == 200)
             {
                 $('.alert').hide();
-                $("#addContact").modal("hide");
-                if (document.getElementById("searchContactsInput").value.length != 0)
-                    searchContacts();
-                else
-                    fetchAllContacts('update');
-                $("#contactAddSuccessAlert").show();
-                clearAddContactModal();
+				var jsonArray = JSON.parse(xhr.responseText);
+                fillArticleCard(jsonArray);
             }
             else if (this.status != 200)
             {
                 $('.alert').hide();
                 $("#addContact").modal("hide");
-                document.getElementById("genericErrorMessage").innerHTML = "Unable to add contact.";
+                document.getElementById("genericErrorMessage").innerHTML = "Unable to find article.";
                 $("#genericErrorAlert").show();
             }
         };
@@ -69,6 +98,13 @@ function fetchNewArticle(event)
         alert(err.message);
         return 'err';
     }
+}
+
+function fillArticleCard(dataArray) //dataArray vs single object
+{
+	document.getElementById("article-title").innerHTML = dataArray.title;
+	document.getElementById("article-summary").innerHTML = dataArray.summary;
+	document.getElementById("article-link").href = dataArray.links;
 }
 
 function fetchArticle(event)
@@ -170,7 +206,7 @@ function receiveAlgorithm()
 	var index = Math.floor(Math.random() * count);
 	var interestCategory = usersInterests[index];
 	
-	var url = 'file:///C:/Users/ariel/School/poosd/microlearning/website/json/' + interestCategory + '.json';
+	var url = webRoot + '/json/' + interestCategory + '.json';
 	var script = document.createElement("script"); //Make a script DOM node
     script.src = url; //Set it's src to the provided URL
     document.head.appendChild(script);
@@ -343,7 +379,7 @@ function submitCreateUser(event)
         return;
     }
 	
-	if (document.getElementById("exampleInputEmail2").value === "demo@gmail.com" || !storeNewUser())
+	if ((document.getElementById("exampleInputEmail2").value === "demo@gmail.com" && document.getElementById("exampleInputPassword2").value != "demotest")|| !storeNewUser())
     {
         $('.alert').hide();
         $("#duplicateUserNameAlert").show();
@@ -373,7 +409,7 @@ function submitLoginUser(event)
     }
 	
 	
-	window.location.href = 'file:///C:/Users/ariel/School/poosd/microlearning/website/main.html';//webRoot + '/main.html';"
+	window.location.href = webRoot + '/main.html';//'file:///C:/Users/ariel/School/poosd/microlearning/website/main.html';
 	document.getElementById("myForm").reset();
 	return;
 	
@@ -387,5 +423,5 @@ function signOut()
     userId = 0;
 	localStorage.setItem("currentUsername", null);
     window.name = '';
-    window.location.href = 'file:///C:/Users/ariel/School/poosd/microlearning/website' + '/index.html';
+    window.location.href = webRoot + '/index.html';//'file:///C:/Users/ariel/School/poosd/microlearning/website/index.html';
 }

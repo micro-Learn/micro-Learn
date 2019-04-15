@@ -9,15 +9,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	</head>
 	<style>
-mark { 
-	background-color: #4d94ff;
-	color: black;
-	//border-radius: 10px;
-	border-radius: 10px 20px;
-	position: relative;
-	z-index: 3;
-}
-</style>
+	mark { 
+		background-color: #4d94ff;
+		color: black;
+		//border-radius: 10px;
+		border-radius: 10px 20px;
+		position: relative;
+		z-index: 3;
+	}
+	</style>
 	<body>
 
 		<div id="page">
@@ -103,8 +103,8 @@ mark {
 				<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="container col-md-3 alert alert-danger alert-dismissible fade show pl-3" role="alert" id="genericArticleAlert" style="display: none; margin-bottom: 10px; padding-top: 4px; padding-bottom: 4px;">
-				<strong>Unable to find article.</strong>
+			<div class="container col-md-3 alert alert-danger alert-dismissible fade show pl-3" role="alert" id="genericErrorAlert" style="display: none; margin-bottom: 10px; padding-top: 4px; padding-bottom: 4px;">
+				Connection error: <span id="genericErrorMessage"></span>
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close" style="padding: 0; margin-right: 12px; margin-top: 3px;">
 				<span aria-hidden="true">&times;</span>
 				</button>
@@ -125,6 +125,40 @@ mark {
 								<input class="form-check-input" type="checkbox" value="automation" id="defaultCheck1">
 								<label class="form-check-label" for="defaultCheck1">Automation</label>
 							</div>
+							<!--
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="food" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Food</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="math" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Math</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="music" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Music</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="nature" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Nature</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="people" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">People</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="physics" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Physics</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="science" id="defaultCheck6">
+								<label class="form-check-label" for="defaultCheck6">Science</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="sport" id="defaultCheck6">
+								<label class="form-check-label" for="defaultCheck6">Sport</label>
+							</div>
+							-->
 							<div class="form-check w-50">
 								<input class="form-check-input" type="checkbox" value="biology" id="defaultCheck2">
 								<label class="form-check-label" for="defaultCheck2">Biology</label>
@@ -321,7 +355,13 @@ Mathematics has many facets; though it has a wealth of applications, Mathematics
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<!--
+		<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+		-->
 		<script src="scripts/main.js"></script>
 	</body>
 
