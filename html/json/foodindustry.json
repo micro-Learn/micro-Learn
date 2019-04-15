@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Plant expressed vaccine",
+		summary: "Plant expressed vaccine or project GreenVax[1] In 2005 DARPA’s Accelerated Manufacture of Pharmaceuticals (AMP) program was created In response to emerging and novel biologic threats.[2] In 2009 DARPA offered a government contract for a Non-GMO plant-based systems expressing recombinant proteins, due to The 2009 H1N1 swine flu pandemic that highlighted the national need for rapid and agile vaccine manufacturing capabilities.[3] The Texas A&M University and a Texas company have been awarded a $40 million U.S. Department of Defense grant to develop a plant expressed vaccine made from tobacco.[4] While egg-based vaccines typically take more than six months to develop after a virus is isolated, the new process will take only four to six weeks.[4] The vice chancellor for research at A&M System declared that if the project works it will be one of the largest and most capable vaccine facilities in the world.[4] However the major problem is the public acceptance of this technology, many of the companies are looking for the FDA approval "+'<br><br>'+'The plant-based vaccine production method works by isolating a specific antigen protein, one that triggers a human immune response from the targeted virus. A gene from the protein is transferred to bacteria, which are then used to “infect” plant cells. The plants then start producing the exact protein that will be used for vaccinations.[6] Other uses of plant-expressed vaccines including the successful creation of edible bananas that protect against the Norwalk virus.',
+		links: "https://en.wikipedia.org/wiki/Plant_expressed_vaccine"
+	},
+	{
+		title: "Olive oil extraction",
+		summary: 'Olive oil extraction is the process of extracting the oil present in olive drupes, known as olive oil. Olive oil is produced in the mesocarp cells, and stored in a particular type of vacuole called a lipo vacuole, i.e., every cell contains a tiny olive oil droplet. Olive oil extraction is the process of separating the oil from the other fruit contents (vegetative extract liquid and solid material). It is possible to attain this separation by physical means alone, i.e., oil and water do not mix, so they are relatively easy to separate. This contrasts with other oils that are extracted with chemical solvents, generally hexane.[1] The first operation when extracting olive oil is washing the olives, to reduce the presence of contaminants, especially soil which can create a particular flavor effect called "soil taste".',
+		links: "https://en.wikipedia.org/wiki/Olive_oil_extraction"
+	},
+	{
+		title: "Stuffed and Starved",
+		summary: 'Stuffed and Starved: The Hidden Battle for the World Food System is a non-fiction book written by Raj Patel. It was published in 2008 by Melville House Publishing. Stuffed and Starved looks at the inequities of the world food system from the beginning to the end of the conventional food chain, from producers to manufacturers and distributors to consumers.'+'<br><br>'+'According to Naomi Klein, Stuffed and Starved is "One of the most dazzling books I have read in a very long time. The product of a brilliant mind, and a gift to a world hungering for justice."',
+		links: "https://en.wikipedia.org/wiki/Stuffed_and_Starved"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

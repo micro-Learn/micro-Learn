@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Etiquette",
+		summary: "Etiquette (/ˈɛtɪˌkɛt/ or /ˈɛtɪkɪt/, French: [e.ti.kɛt]) is a code of behavior that delineates expectations for social behavior according to contemporary conventional norms within a society, social class, or group."+'<br><br>'+"The French word étiquette, literally signifying a tag or label, was used in a modern sense in English around 1750.[2] Etiquette is behaviour that assists survival and has changed and evolved over the years.",
+		links: "https://en.wikipedia.org/wiki/Etiquette"
+	},
+	{
+		title: "Hollywood Life",
+		summary: "Hollywood Life is an American entertainment website at Hollywoodlife.com launched in 2009 as part of Penske Media Corporation by longtime magazine editor Bonnie Fuller, who is the former editor of the magazines Cosmopolitan, Glamour, and Us Weekly.[2] The site covers celebrity, fashion, beauty, and entertainment news."+'<br><br>'+"Hollywood Life also offers live coverage of awards shows and other notable pop culture events. In June 2015, Hollywood Life and PIX11, Tribune Broadcasting's New York flagship station, announced a content and cross-promotional partnership across all platforms. As part of the collaboration, Hollywood Life now provides PIX11 News with content on air and on PIX11.com. Additionally, Bonnie Fuller is a regular contributor along with the outlet's senior entertainment reporter Chloe Melas and fashion editor Katrina Mitzeliotis."+'<br><br>'+"The website began airing a weekly podcast in January 2015, hosted by editor-in-chief Bonnie Fuller, which includes discussion, debate and exclusives on celebrity news.",
+		links: "https://en.wikipedia.org/wiki/Hollywood_Life"
+	},
+	{
+		title: "Middlebrow",
+		summary: 'The term middlebrow describes easily accessible art, usually literature, and the people who use the arts to acquire culture and "class" (social prestige). First used in the British satire magazine Punch in 1925, the term middlebrow is the intermediary "brow" descriptor between highbrow and lowbrow, which are terms derived from the pseudo-science of phrenology.'+'<br><br>'+'The term middlebrow became a pejorative usage in the modernist cultural criticism, by Dwight Macdonald, Virginia Woolf, and Russell Lynes, which served the cause of the marginalization of the popular culture in favor of high culture.[2] Culturally, the middlebrow is classed as a forced and ineffective attempt at cultural and intellectual achievement, and as characterizing literature that emphasizes emotional and sentimental connections, rather than intellectual quality and literary innovation;[3] although postmodernism more readily perceives the advantages of the middlebrow cultural-position that is aware of high culture, but is able to balance aesthetic claims with the claims of the everyday world.',
+		links: "https://en.wikipedia.org/wiki/Middlebrow"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

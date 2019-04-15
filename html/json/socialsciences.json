@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Health survival paradox",
+		summary: 'The male-female health-survival paradox, also known as the morbidity-mortality paradox or gender paradox, is the phenomenon in which women experience more medical conditions and disability during their lives, but they unexpectedly live longer than men. It is considered a paradox because of the normal assumption that sicker people will die sooner than people who experience less disease and disability. In this case, however, the group of people that experiences the most disease and disability is the one that lives the longest.'+'<br><br>'+"Records of the female survival advantage can be traced back to the 18th century, but gained popularity and caught the eyes of researchers in the 19th century.",
+		links: "https://en.wikipedia.org/wiki/Health_survival_paradox"
+	},
+	{
+		title: "Quantum social science",
+		summary: 'Quantum social science is an emerging field of interdisciplinary research which draws parallels between quantum physics and the social sciences. Although there is no settled consensus on a single approach,[1] a unifying theme is that, while the social sciences have long modelled themselves on mechanistic science, they can learn much from quantum ideas such as complementarity and entanglement. Some authors are motivated by quantum mind theories that the brain, and therefore human interactions, are literally based on quantum processes, while others are more interested in taking advantage of the quantum toolkit to simulate social behaviours which elude classical treatment. Quantum ideas have been particularly influential in psychology, but are starting to affect other areas such as international relations and diplomacy in what one 2018 paper called a “quantum turn in the social sciences.”',
+		links: "https://en.wikipedia.org/wiki/Quantum_social_science"
+	},
+	{
+		title: "Youth studies",
+		summary: "Youth studies is an interdisciplinary academic field devoted to the study of the development, history, culture, psychology, and politics of youth. The field studies not only specific cultures of young people, but also their relationships, roles and responsibilities throughout the larger societies which they occupy. The field includes scholars of education, literature, history, politics, religion, sociology, and many other disciplines within the humanities and social sciences.Youth studies encourages the understanding of experiences that are predominantly manifested among young people, generalized phenomenon and social change.[1] The majority of 15- to 24-year-olds in 2008 lived in developing countries.[2] The definition of youth varies across cultural contexts.[2] The social experience and organization of time and space are important themes in youth studies. Scholars examine how neoliberalism and globalization affect how young people experience life, including in comparison to previous generations.",
+		links: "https://en.wikipedia.org/wiki/Youth_studies"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

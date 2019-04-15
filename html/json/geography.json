@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Economic restructuring",
+		summary: "Economic restructuring refers to the phenomenon of Western urban areas shifting from a manufacturing to a service sector economic base. This transformation has affected demographics including income distribution, employment, and social hierarchy; institutional arrangements including the growth of the corporate complex, specialized producer services, capital mobility, informal economy, nonstandard work, and public outlays; as well as geographic spacing including the rise of world cities, spatial mismatch, and metropolitan growth differentials.",
+		links: "https://en.wikipedia.org/wiki/Economic_restructuring"
+	},
+	{
+		title: "Glacial refugium",
+		summary: 'A glacial refugium (plural refugia) is a geographic region which made possible the survival of flora and fauna in times of ice ages and allowed for post-glacial re-colonization.[1] Different types of glacial refugia can be distinguished, namely nunatak, peripheral and lowland refugia.[2] Glacial refugia have been suggested as a major cause of the distributions of flora and fauna in both temperate and tropical latitudes.[3][4][5] However, in spite of the continuing use of historical refugia to explain modern-day species distributions, especially in birds,[6][7] doubt has been cast on the validity of such inferences, as much of the differentiation between populations observed today may have occurred before or after their restriction to refugia.',
+		links: "https://en.wikipedia.org/wiki/Glacial_refugium"
+	},
+	{
+		title: "Spatial analysis",
+		summary: 'Spatial analysis or spatial statistics includes any of the formal techniques which study entities using their topological, geometric, or geographic properties. Spatial analysis includes a variety of techniques, many still in their early development, using different analytic approaches and applied in fields as diverse as astronomy, with its studies of the placement of galaxies in the cosmos, to chip fabrication engineering, with its use of "place and route" algorithms to build complex wiring structures. In a more restricted sense, spatial analysis is the technique applied to structures at the human scale, most notably in the analysis of geographic data.'+'<br><br>'+"Complex issues arise in spatial analysis, many of which are neither clearly defined nor completely resolved, but form the basis for current research. The most fundamental of these is the problem of defining the spatial location of the entities being studied."+'<br><br>'+"Classification of the techniques of spatial analysis is difficult because of the large number of different fields of research involved, the different fundamental approaches which can be chosen, and the many forms the data can take.",
+		links: "https://en.wikipedia.org/wiki/Spatial_analysis"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

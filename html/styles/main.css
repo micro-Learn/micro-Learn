@@ -1,0 +1,152 @@
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.navbar-custom {
+	background-image: linear-gradient(to top left, #262626, #5D5D5D);
+}
+
+.navbar-custom .navbar-nav .nav-link {
+	color: #fff;
+}
+
+#page {
+	position: relative;
+	min-height: 100%;
+	border: 1px solid #333333;
+	background-image: url(../images/black-gloss-background-edited.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+}
+
+.container {
+	//background: #5D5D5D;
+	//box-shadow:15px 20px 0px rgba(0,0,0,0.1);
+	
+}
+
+#interests-box {
+	background-image: linear-gradient(to bottom, lightgray, #E8E8E8);
+	background-color: lightgray;
+	border-style: double;
+	border-radius: 15px 0 0 15px;
+	position:relative;
+	box-shadow: 14px 16px 11px rgba(38, 38, 38, 1);
+}
+
+#interests-box h4 {
+	background-color: none;
+	border-style: solid;
+	border-color: gray;
+	border-width: 0 0 2px 0;
+	font-weight: 600;
+}
+
+#interests-box h4:after {
+	content:" ";
+	width: 96px;
+	height: 4px;
+	background:#5D5D5D;
+	display:block;
+	margin-top: 4px;
+	margin-bottom: 6px;
+	border-radius:3px;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+	z-index: 4;
+}
+
+.form-check {
+	margin: 5px;
+}
+
+#card-box {
+	//background-image: linear-gradient(to top, lightgray, #C8C8C8);
+	background-color: lightgray;
+	border-style: double;
+	border-radius: 0 15px 0 0;
+	box-shadow: 14px 16px 11px rgba(38, 38, 38, 1);
+}
+
+#card-box h4 {
+	background-color: none;
+	border-style: solid;
+	border-color: gray;
+	border-width: 0 0 2px 0;
+	font-weight: 600;
+}
+
+.card-subtitle {
+	font-weight: 500;
+}
+
+#card-box h4:after {
+	content:" ";
+	width: 84px;
+	height: 4px;
+	background:#5D5D5D;
+	display:block;
+	margin-top: 4px;
+	margin-bottom: 6px;
+	border-radius:3px;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+	z-index: 4;
+}
+
+.carousel-item {
+	height: 100%;
+}
+
+.card {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-image: url(../images/glosswhitebackground.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.card-text {
+	overflow: auto;
+	max-height: 320px;
+}
+
+mark { 
+  background-color: blue;
+  color: black;
+}
+
+#button-box {
+	//background-image: linear-gradient(to top, #D8D8D8, #E8E8E8);
+	background-color: #E8E8E8;
+	border-style: double;
+	box-shadow: 14px 16px 11px rgba(38, 38, 38, 1);
+	border-radius: 0 0 15px 0;
+}
+/*
+#new-article {
+	box-shadow: 14px 16px 11px rgba(38, 38, 38, 0.9);
+}
+*/
+footer {
+	position: absolute;
+	bottom: 0;
+}

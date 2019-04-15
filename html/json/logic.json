@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Self-refuting idea",
+		summary: "Self-refuting ideas or self-defeating ideas are ideas or statements whose falsehood is a logical consequence of the act or situation of holding them to be true. Many ideas are called self-refuting by their detractors, and such accusations are therefore almost always controversial, with defenders stating that the idea is being misunderstood or that the argument is invalid. For these reasons, none of the ideas below are unambiguously or incontrovertibly self-refuting. These ideas are often used as axioms, which are definitions taken to be true (tautological assumptions), and cannot be used to test themselves, for doing so would lead to only two consequences: consistency (circular reasoning) or exception (self-contradiction). It is important to know that the conclusion of an argument that is self-refuting is not necessarily false, since it could be supported by another, more valid, argument.",
+		links: "https://en.wikipedia.org/wiki/Self-refuting_idea"
+	},
+	{
+		title: "Freethought",
+		summary: "Freethought (or 'free thought')[1] is a philosophical viewpoint which holds that positions regarding truth should be formed on the basis of logic, reason, and empiricism, rather than authority, tradition, revelation, or dogma. According to the Oxford English Dictionary [2], a freethinker is 'a person who forms their own ideas and opinions rather than accepting those of other people, especially in religious teaching.' In some contemporary thought in particular, freethought is strongly tied with rejection of traditional social or religious belief systems.[1][3] The cognitive application of freethought is known as 'freethinking', and practitioners of freethought are known as 'freethinkers'.[1] Modern freethinkers consider freethought as a natural freedom of all negative and illusive thoughts acquired from the society."+'<br><br>'+'The term first came into use in the 17th century in order to indicate people who inquired into the basis of traditional religious beliefs. In practice, freethinking is most closely linked with secularism, atheism, agnosticism, anti-clericalism, and religious critique. The Oxford English Dictionary defines freethinking as, "The free exercise of reason in matters of religious belief, unrestrained by deference to authority; the adoption of the principles of a free-thinker." Freethinkers hold that knowledge should be grounded in facts, scientific inquiry, and logic. The skeptical application of science implies freedom from the intellectually limiting effects of confirmation bias, cognitive bias, conventional wisdom, popular culture, prejudice, or sectarianism.',
+		links: "https://en.wikipedia.org/wiki/Freethought"
+	},
+	{
+		title: "Argument map",
+		summary: "In informal logic and philosophy, an argument map or argument diagram is a visual representation of the structure of an argument. An argument map typically includes the key components of the argument, traditionally called the conclusion and the premises, also called contention and reasons.[1] Argument maps can also show co-premises, objections, counterarguments, rebuttals, and lemmas. There are different styles of argument map but they are often functionally equivalent and represent an argument's individual claims and the relationships between them."+'<br><br>'+"Argument maps are commonly used in the context of teaching and applying critical thinking.[2] The purpose of mapping is to uncover the logical structure of arguments, identify unstated assumptions, evaluate the support an argument offers for a conclusion, and aid understanding of debates. Argument maps are often designed to support deliberation of issues, ideas and arguments in wicked problems."+'<br><br>'+"An argument map is not to be confused with a concept map or a mind map, two other kinds of node–link diagram which have different constraints on nodes and links.",
+		links: "https://en.wikipedia.org/wiki/Argument_map"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

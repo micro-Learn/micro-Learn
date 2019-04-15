@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Sword swallowing",
+		summary: "Sword swallowing is a skill in which the performer passes a sword through the mouth and down the esophagus to the stomach. This feat is not swallowing in the traditional sense; the natural processes that constitute swallowing do not take place, but are repressed in order to keep the passage from the mouth to the stomach open for the sword. The practice is dangerous and there is risk of injury or death.",
+		links: "https://en.wikipedia.org/wiki/Sword_swallowing"
+	},
+	{
+		title: "Hip-hop theater",
+		summary: "Hip-hop theater is a form of theater that presents contemporary stories through the use of one or more of the four elements of hip-hop culture—b-boying, graffiti writing, MCing (rapping), and DJing.[1][2] Other cultural markers of hip-hop such as spoken word, beatboxing, and hip-hop dance can be included as well although they are not always present. What is most important is the language of the theatrical piece and the plot's relevance to the world.[2] Danny Hoch, founder of the Hip-Hop Theater Festival, further defines it as such: 'Hip-hop theatre must fit into the realm of theatrical performance, and it must be by, about and for the hip-hop generation, participants in hip-hop culture, or both.'"+'<br><br>'+"Hip-hop theater productions appear in a wide range of platforms including single performances, week-long festivals, and traveling repertory companies. Marc Bamuthi Joseph is an award-winning spoken word poet and dancer who has been commissioned several times to create and direct single hip-hop theater works. British choreographer Jonzi D is the artistic director of the London-based Breakin' Convention, a week long hip-hop theater festival. Rennie Harris, Mourad Merzouki, and Victor Quijada are artistic directors who run hip-hop theater companies in the U.S., France, and Canada respectively. The Rock Steady Crew, Magnificent Force, and the Rhythm Technicians pioneered this theatrical genre which started in the United States.",
+		links: "https://en.wikipedia.org/wiki/Hip-hop_theater"
+	},
+	{
+		title: "Aerial silk",
+		summary: "Aerial silks (also known as aerial contortion, aerial ribbons, aerial tissues, fabric, ribbon, or tissu, depending on personal preference) is a type of performance in which one or more artists perform aerial acrobatics while hanging from a fabric. The fabric may be hung as two pieces, or a single piece, folded to make a loop, classified as hammock silks. Performers climb the suspended fabric without the use of safety lines and rely only on their training and skill to ensure safety. They use the fabric to wrap, suspend, drop, swing, and spiral their bodies into and out of various positions. Aerial silks may be used to fly through the air, striking poses and figures while flying. Some performers use dried or spray rosin on their hands and feet to increase the friction and grip on the fabric.",
+		links: "https://en.wikipedia.org/wiki/Aerial_silk"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

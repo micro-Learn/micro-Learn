@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Pipe marking",
+		summary: "Pipe marking is the usage of labels, typically color coded, to identify the use, contents and flow direction of pipes inside of industrial and commercial buildings. This information assists personnel when carrying out maintenance and emergency personnel when responding to emergencies.",
+		links: "https://en.wikipedia.org/wiki/Pipe_marking"
+	},
+	{
+		title: "Financial engineering",
+		summary: "Financial engineering is a multidisciplinary field involving financial theory, methods of engineering, tools of mathematics and the practice of programming.[1] It has also been defined as the application of technical methods, especially from mathematical finance and computational finance, in the practice of finance.[2] Despite its name, financial engineering does not belong to any of the fields in traditional professional engineering even though many financial engineers have studied engineering beforehand and many universities offering a postgraduate degree in this field require applicants to have a background in engineering as well.[3] In the United States, the Accreditation Board for Engineering and Technology (ABET) does not accredit financial engineering degrees.[4] In the United States, financial engineering programs are accredited by the International Association of Quantitative Finance."+'<br><br>'+"Financial engineering draws on tools from applied mathematics, computer science, statistics and economic theory.[6] In the broadest sense, anyone who uses technical tools in finance could be called a financial engineer, for example any computer programmer in a bank or any statistician in a government economic bureau.[7] However, most practitioners restrict the term to someone educated in the full range of tools of modern finance and whose work is informed by financial theory.[8] It is sometimes restricted even further, to cover only those originating new financial products and strategies.[9] Financial engineering plays a key role in the customer-driven derivatives business[10] which encompasses quantitative modelling and programming, trading and risk managing derivative products in compliance with the regulations and Basel capital/liquidity requirements.",
+		links: "https://en.wikipedia.org/wiki/Financial_engineering"
+	},
+	{
+		title: "Applied physics",
+		summary: 'Applied physics is intended for a particular technological or practical use. It is usually considered as a bridge or connection between physics and engineering.'+'<br><br>'+'"Applied" is distinguished from "pure" by a subtle combination of factors, such as the motivation and attitude of researchers and the nature of the relationship to the technology or science that may be affected by the work. Applied physics is rooted in the fundamental truths and basic concepts of the physical sciences, but is concerned with the utilization of scientific principles in practical devices and systems, and in the application of physics in other areas of science.'+'<br><br>'+"It usually differs from engineering in that an applied physicist may not be designing something in particular, but rather is using physics or conducting physics research with the aim of developing new technologies or solving an engineering problem. This approach is similar to that of applied mathematics."+'<br><br>'+"In other words, applied physics is rooted in the fundamental truths and basic concepts of the physical sciences but is concerned with the utilization of these scientific principles in practical devices and systems."+'<br><br>'+"Applied physicists can also be interested in the use of physics for scientific research. For instance, the field of accelerator physics can contribute to research in theoretical physics by working with engineers enabling design and construction of high-energy colliders.",
+		links: "https://en.wikipedia.org/wiki/Applied_physics"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

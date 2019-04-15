@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Divine inspiration",
+		summary: "Divine inspiration is the concept of a supernatural force, typically a deity, causing a person or people to experience a creative desire. It has been a commonly reported aspect of many religions, for thousands of years. Divine inspiration is often closely tied to the concept of revelation, the belief in information being revealed or disclosed through communication with a deity or other supernatural entity or entities.",
+		links: "https://en.wikipedia.org/wiki/Divine_inspiration"
+	},
+	{
+		title: "Noble lie",
+		summary: "In politics, a noble lie is a myth or untruth, often, but not invariably, of a religious nature, knowingly propagated by an elite to maintain social harmony or to advance an agenda. The noble lie is a concept originated by Plato as described in the Republic."+'<br><br>'+"In religion, a pious fiction is a narrative that is presented as true by the author, but is considered by others to be fictional albeit produced with an altruistic motivation. The term is sometimes used pejoratively to suggest that the author of the narrative was deliberately misleading readers for selfish or deceitful reasons. The term is often used in religious contexts, sometimes referring to passages in religious texts.",
+		links: "https://en.wikipedia.org/wiki/Noble_lie"
+	},
+	{
+		title: "Nature religion",
+		summary: "A nature religion is a religious movement that believes nature and the natural world is an embodiment of divinity, sacredness or spiritual power.[1] Nature religions include indigenous religions practiced in various parts of the world by cultures who consider the environment to be imbued with spirits and other sacred entities. It also includes contemporary Pagan faiths which are primarily concentrated in Europe and North America."+'<br><br>'+"The term 'nature religion' was first coined by the American religious studies scholar Catherine Albanese, who used it in her work Nature Religion in America: From the Algonkian Indians to the New Age (1991) and later went on to use it in other studies. Following on from Albanese's development of the term it has since been used by other academics working in the discipline.",
+		links: "https://en.wikipedia.org/wiki/Nature_religion"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

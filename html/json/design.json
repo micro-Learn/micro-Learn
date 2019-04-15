@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Anti-pattern",
+		summary: "An anti-pattern is a common response to a recurring problem that is usually ineffective and risks being highly counterproductive.[1][2] The term, coined in 1995 by Andrew Koenig,[3] was inspired by a book, Design Patterns, which highlights a number of design patterns in software development that its authors considered to be highly reliable and effective."+'<br><br>'+"The term was popularized three years later by the book AntiPatterns, which extended its use beyond the field of software design to refer informally to any commonly reinvented but bad solution to a problem. Examples include analysis paralysis, cargo cult programming, death march, groupthink and vendor lock-in.",
+		links: "https://en.wikipedia.org/wiki/Planetary_management"
+	},
+	{
+		title: "Geodesign",
+		summary: 'Geodesign is a set of concepts and methods[1] to get all stakeholders and different professions involved in order to collaboratively design and realize the optimal solution for spatial challenges in the built and natural environments, utilizing all available techniques and data in an integrated process. Originally, geodesign was mainly applied during the design & planning phase. "Geodesign is a design and planning method which tightly couples the creation of design proposals with impact simulations informed by geographic contexts."[2] Now, it is also used during realization and maintenance phases and to facilitate re-use of for example buildings or industrial areas[3][4]. Geodesign includes project conceptualization, analysis, design specification, stakeholder participation and collaboration, design creation, simulation, and evaluation (among other stages).',
+		links: "https://en.wikipedia.org/wiki/Geodesign"
+	},
+	{
+		title: "Pixel artist",
+		summary: "A pixel artist is a graphic designer who specializes in computer art and can refer to a number of artistic and professional disciplines which focus on visual communication and presentation.[1][2][3] Similar to chromoluminarism used in the pointillism style of painting, in which small distinct points of primary colors create the impression of a wide selection of secondary and intermediate colors, a pixel artist works with pixels, the smallest piece of information in an image.[4] The technique relies on the perceptive ability of the eye and mind of the viewer to mix the color spots into a fuller range of tones. Pixel art is often utilitarian and anonymous.[3][5] Pixel design can refer to both the process (designing) by which the communication is created and the products (designs) which are generated."+'<br><br>'+"Common uses of pixel design include print and broadcast media, web design and games.[1][3][7] For example, a product package might include a logo or other artwork, organized text and pure design elements such as shapes and color which unify the piece. Composition is one of the most important features of design especially when utilizing pre-existing materials or using diverse elements. Pixel artists can also be a specialist in computer animation such as Computer Animation Production System users in post production of animated films and rendering (computer graphics) images like raster graphics."+'<br><br>'+'In the 2000s, pixel artists such as Tyler West, Stephane Martiniere and Daniel Dociu have gained international notoriety and artistic recognition, due in part to the popularity of computer and video games.[11][12] For instance the E3 Media and Business Summit, an annual trade show for the computer and video games industry, has a concurrent juried art show, "Into the Pixel" starting in 2003.[12][13][14][15] Jurist and Getty Research Institute curator Louis Marchesano noted that most of the works were concept pieces used in the development of games.'+'<br><br>'+'Pixel artists are also used in digital forensics, an emerging field, to both create and detect fraud in all forms of media including "the courts, politics and scientific journals".[16] For instance, the Federal Office of Research Integrity has said that the percent of allegations of fraud they investigated involved contested images has risen from less than 3 in 1990 to 44.1 percent in 2006.',
+		links: "https://en.wikipedia.org/wiki/Pixel_artist"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

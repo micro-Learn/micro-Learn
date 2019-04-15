@@ -1,0 +1,25 @@
+var myData = [
+	{
+		title: "Escapism",
+		summary: "Escapism is the avoidance of unpleasant, boring, arduous, scary, or banal aspects of daily life.[2] It can also be used as a term to define the actions people take to help relieve persistent feelings of depression or general sadness.",
+		links: "https://en.wikipedia.org/wiki/Escapism"
+	},
+	{
+		title: "Screenwriting",
+		summary: "Screenwriting, also called scriptwriting, is the art and craft of writing scripts for mass media such as feature films, television productions or video games. It is often a freelance profession."+'<br><br>'+"Screenwriters are responsible for researching the story, developing the narrative, writing the script, screenplay, dialogues and delivering it, in the required format, to development executives. Screenwriters therefore have great influence over the creative direction and emotional impact of the screenplay and, arguably, of the finished film. Screenwriters either pitch original ideas to producers, in the hope that they will be optioned or sold; or are commissioned by a producer to create a screenplay from a concept, true story, existing screen work or literary work, such as a novel, poem, play, comic book, or short story.",
+		links: "https://en.wikipedia.org/wiki/Screenwriting"
+	},
+	{
+		title: "Mathemagician",
+		summary: 'A mathemagician is a mathematician who is also a magician.'+'<br><br>'+'The name "mathemagician" was probably first applied to Martin Gardner, but has since been used to describe many mathematician/magicians, including Arthur T. Benjamin,[1] Persi Diaconis,[2] and Colm Mulcahy.[3] Diaconis has suggested that the reason so many mathematicians are magicians is that "inventing a magic trick and inventing a theorem are very similar activities."'+'<br><br>'+"A great number of self-working mentalism tricks rely on mathematical principles. Max Maven often utilizes this type of magic in his performance.",
+		links: "https://en.wikipedia.org/wiki/Mathemagician"
+	}
+]
+
+index = Math.floor(Math.random() * myData.length);
+
+var article = myData[index];
+
+document.getElementById("article-title").innerHTML = article.title;
+document.getElementById("article-summary").innerHTML = article.summary;
+document.getElementById("article-link").href = article.links;

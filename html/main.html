@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Welcome to μLearn</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	</head>
+	<style>
+	mark { 
+		background-color: #4d94ff;
+		color: black;
+		//border-radius: 10px;
+		border-radius: 10px 20px;
+		position: relative;
+		z-index: 3;
+	}
+	</style>
+	<body>
+
+		<div id="page">
+	
+			<!-- Navigation Bar begin -->
+			<nav class="navbar navbar-custom sticky-top navbar-expand-md navbar-dark shadow-lg py-0 rounded">
+				<a class="navbar-brand" href="#">
+					<img src="images/micro-learn-logo-edited.png" alt="Micro Learn Logo" width="155" height="55">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<span class="text-white" id="userDisplay">Welcome</span>
+						</li>
+						<li class="nav-item active ml-3">
+							<button type="button" class="btn btn-info btn-sm gradient" data-toggle="modal" data-target="#exampleModalCenter">Help</button>
+						</li>
+						<li class="nav-item active ml-3">
+							<button type="button" class="btn btn-signout btn-sm gradient" onclick="signOut()">Sign out</button>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Navbar End -->
+				
+			<!-- Instructions Modal Begin -->
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content" style="background-color: #F5F5F5;">
+				  <div class="modal-header">
+					<h5 class="modal-title w-100 text-center" id="exampleModalCenterTitle">Instructions</h5>
+				<!-- 	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button> -->
+				  </div>
+				  <div class="modal-body">
+					
+					<!-- Consider including definition of microlearning in seperate section, still stemming from "help" button -->
+					<p class="text-center">
+						Welcome to <strong>μLearn</strong> where you can quickly read the summary section of Wikipedia articles on topics of your choice.
+						<br>
+					</p>
+					
+					<ol>
+						<li>
+							Locate the tags under the "Interests" section.
+							These are the categories in which you would like to recieve a Wikipedia article.
+						</li>
+						<li>
+							Choose as many tags as you like.
+						</li>
+						<li>
+							Click the "Receive Article" button.
+						</li>
+						<li>
+							Your new article will appear under the "Article" section.
+						</li>
+					</ol>
+					
+					<p class="text-center">
+						If you like the summary and would like to read more, feel free to click "Wikipedia Article" to go directly to the original article.
+						<br><br>
+						You can receive up to <strong>5</strong> articles per day to encourage effective learning techniques. Taking the rest of the day off will help you process what you've learned.
+					</p>
+			
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- Modal End -->
+					
+			<div class="container col-md-3 alert alert-warning alert-dismissible fade show pl-3" role="alert" id="articleLimitAlert" style="display: none; margin-bottom: 10px; padding-top: 4px; padding-bottom: 4px;">
+				<strong>You have reached your article limit for the day.</strong>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close" style="padding: 0; margin-right: 12px; margin-top: 3px;">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="container col-md-3 alert alert-danger alert-dismissible fade show pl-3" role="alert" id="genericErrorAlert" style="display: none; margin-bottom: 10px; padding-top: 4px; padding-bottom: 4px;">
+				Connection error: <span id="genericErrorMessage"></span>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close" style="padding: 0; margin-right: 12px; margin-top: 3px;">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+						
+			<div class="container" style="margin-top: 50px; margin-bottom: 80px;">
+				<div class="row">
+
+					<!-- Interest Tags Section -->
+				
+					<div class="col-md-3 p-0" id="interests-box" style="max-height: 692px;">
+						
+						<h4 class="text-center p-3 pt-4 mx-3"><mark class="px-2 pb-3 pt-0">Interests</mark></h4>
+						
+						<form class="d-flex flex-column flex-wrap justify-content-around py-3 px-4" id="users-interests" style="height: 87%;">
+							
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="automation" id="defaultCheck1">
+								<label class="form-check-label" for="defaultCheck1">Automation</label>
+							</div>
+							<!--
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="food" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Food</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="math" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Math</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="music" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Music</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="nature" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Nature</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="people" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">People</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="physics" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Physics</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="science" id="defaultCheck6">
+								<label class="form-check-label" for="defaultCheck6">Science</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="sport" id="defaultCheck6">
+								<label class="form-check-label" for="defaultCheck6">Sport</label>
+							</div>
+							-->
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="biology" id="defaultCheck2">
+								<label class="form-check-label" for="defaultCheck2">Biology</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="computerscience" id="defaultCheck3">
+								<label class="form-check-label" for="defaultCheck3">Computer Science</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="design" id="defaultCheck4">
+								<label class="form-check-label" for="defaultCheck4">Design</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="earth" id="defaultCheck5">
+								<label class="form-check-label" for="defaultCheck5">Earth</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="earthsciences" id="defaultCheck6">
+								<label class="form-check-label" for="defaultCheck6">Earth Sciences</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="electronics" id="defaultCheck7">
+								<label class="form-check-label" for="defaultCheck7">Electronics</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="engineering" id="defaultCheck8">
+								<label class="form-check-label" for="defaultCheck8">Engineering</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="entertainment" id="defaultCheck9">
+								<label class="form-check-label" for="defaultCheck9">Entertainment</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="film" id="defaultCheck10">
+								<label class="form-check-label" for="defaultCheck10">Film</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="foodindustry" id="defaultCheck11">
+								<label class="form-check-label" for="defaultCheck11">Food Industry</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="geography" id="defaultCheck12">
+								<label class="form-check-label" for="defaultCheck12">Geography</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="historyoftelevision" id="defaultCheck13">
+								<label class="form-check-label" for="defaultCheck13">History of Television</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="hobbies" id="defaultCheck14">
+								<label class="form-check-label" for="defaultCheck14">Hobbies</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="logic" id="defaultCheck15">
+								<label class="form-check-label" for="defaultCheck15">Logic</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="mythology" id="defaultCheck16">
+								<label class="form-check-label" for="defaultCheck16">Mythology</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="numbers" id="defaultCheck17">
+								<label class="form-check-label" for="defaultCheck17">Numbers</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="nutrition" id="defaultCheck18">
+								<label class="form-check-label" for="defaultCheck18">Nutrition</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="performingarts" id="defaultCheck19">
+								<label class="form-check-label" for="defaultCheck19">Performing Arts</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="physicalexercise" id="defaultCheck20">
+								<label class="form-check-label" for="defaultCheck20">Physical Exercise</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="popularculture" id="defaultCheck21">
+								<label class="form-check-label" for="defaultCheck21">Popular Culture</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="religion" id="defaultCheck22">
+								<label class="form-check-label" for="defaultCheck22">Religion</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="robotics" id="defaultCheck23">
+								<label class="form-check-label" for="defaultCheck23">Robotics</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="socialsciences" id="defaultCheck24">
+								<label class="form-check-label" for="defaultCheck24">Social Sciences</label>
+							</div>
+							<div class="form-check w-50">
+								<input class="form-check-input" type="checkbox" value="visualarts" id="defaultCheck25">
+								<label class="form-check-label" for="defaultCheck25">Visual Arts</label>
+							</div>
+						</form>
+					</div>
+
+					<!-- Article Cards Section -->
+					
+					<div class="col-md-9">
+						<div class="row" id="card-box">
+							
+							<h4 class="text-center w-100 p-3 pt-4 mx-3 mb-0"><mark class="px-2 pb-3 pt-0">Articles</mark></h4>
+							
+							<!-- Carousel Begin -->
+							<div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel" data-interval="false">
+							<!--
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color:#5D5D5D;"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color:#5D5D5D;"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2" style="background-color:#5D5D5D;"></li>
+							  </ol>
+							  -->
+							  <div class="carousel-inner" style="height: 500px; background-color: none;">
+								
+								<div class="carousel-item active">
+								
+								  <div class="card text-center p-0" style="background-color: #f2f2f2;border-width: 0; border-radius: 0;">
+									  <div class="card-body d-flex flex-column justify-content-around align-items-center mx-4">
+										<h5 class="card-subtitle mb-2 text-muted w-100" id="article-title">Microlearning</h5>
+										<p class="card-text w-100" id="article-summary">Microlearning deals with relatively small learning units and short-term learning activities. The term is used in e-learning and related fields in the sense of learning processes in mediated environments. Microlearning is a holistic approach for skill based learning and education which deals with relatively small learning units. It involves short-term-focused strategies especially designed for skill based understanding/learning/education. Microlearning refers to micro-perspectives of learning, education, training and skill development. The approaches followed for assessment of microlearning are multidimensional & holistic in nature and need based in particular cases [Patil U.K., 1999] [Patil U.K., 2000]. An ideal instructional approach for many situations especially in higher education for skill development, trainability and employability of learners/students [Patil U.K., 2002]. The technique is capable enough to address challenges associated with slow learners [Patil U.K., 2005]. This learning technique is versatile not only for skill based education but also for sustainable socioeconomic development. Without taking care of micro-perspectives in the context of learning, education, training and skill development, a skill based education cannot be imparted effectively [Patil U.K., 2009].<br><br>In a wide sense, microlearning can be understood as a metaphor which refers to micro aspects of a variety of learning models, concepts and processes.<br><br>"No matter if learning refers to the process of building up and organizing knowledge, to the change of behaviour, of attitudes, of values, of mental abilities, of cognitive structures, of emotional reactions, of action patterns or of societal dimensions, in all cases we have the possibility to consider micro, meso and macro aspects of the various views on more or less persisting changes and sustainable alterations of performances." (Hug 2005, p. 4).<br><br>Depending on frames and domains of reference, micro, meso and macro aspects vary. They are relational concepts. For example, in the context of language learning, one might think of micro aspects in terms of vocabularies, phrases, sentences, and distinguish them from situations and episodes (meso aspects) and socio-cultural specifics or complex semantics (macro aspects). In a more general discourse on learning, one might differentiate between the learning of individuals, group learning or learning of organizations and the learning of generations or societies.<br><br>Furthermore, microlearning marks a transition from common models of learning towards micro perspectives on and the significance of micro dimensions in the process of learning. The microlearning approach is an emergent paradigm, so there are no hard definitions or coherent uses of the term yet. However, the growing focus on microlearning activities can be seen by web users' activities on the subject, who tag their corresponding weblog postings and social bookmarks with the term "microlearning".<br><br>As an instructional technology, microlearning focuses on the design of microlearning activities through micro steps in digital media environments, which already is a daily reality for today's knowledge workers. These activities can be incorporated into learner's daily routines and tasks. Unlike "traditional" e-learning approaches, microlearning often tends towards push technology through push media, which reduces the cognitive load on the learners. Therefore, the selection of micro learning objects and also pace and timing of microlearning activities are of importance for didactical designs.<br><br>Microlearning, in a nutshell, is a digital learning experience designed to be effective, engaging and enjoyable. Microlearning provides bite-sized learning content in stark contrast to the traditional model of learning and thus engagement follows.</p>
+										<a href="https://en.wikipedia.org/wiki/Microlearning" class="card-link mb-4" id="article-link">Wikipedia Article</a>
+									  </div>
+									</div>
+									
+								</div>
+								<div class="carousel-item" style="display: none;">
+								
+								  <div class="card text-center p-0" style="background-color: #f2f2f2;border-width: 0; border-radius: 0;">
+									  <div class="card-body d-flex flex-column justify-content-around align-items-center mx-4">
+										<h5 class="card-subtitle mb-2 text-muted w-100">Instruction Concerning the Criteria</h5>
+										<p class="card-text w-100">Since you're here, you either are someone wishing to share your knowledge of Mathematics, or you are someone who wishes to gain knowledge about Mathematics. If you are the first kind of person, have a look around, and see how you can contribute. If you are of the second kind, read on!
+
+Mathematics has many facets; though it has a wealth of applications, Mathematics is also a science, and an art, in its own right. Like other sciences, Mathematics is useful, but, just like other forms of art, Mathematics is beautiful, in its own unique way. You might not see this beauty at first, but the main goal of the Wikiversity School of Mathematics is to let you see this beauty, through inquiry and learning. To achieve this goal, we want to inspire you, since inspiration is essential to learning, discovery, and ultimately, seeing the beauty of Mathematics. A little bit of inspiration can put the beauty of Mathematics, and all its facets, before your eyes.
+
+The School of Mathematics is a work in progress. We are trying to organize our material into a logical order, create new material, and revise existing material. Although we try to keep clarity in mind, if any of the material is confusing, you don't know where to start, or you have other questions, do not hesitate to pose your question at our help desk. There is no such thing as a "dumb question"; learning is driven by questions!
+
+The School of Mathematics wishes you a very warm welcome. We hope that you will benefit from what we have to offer, and we hope that we will benefit from what you have to offer, either now or in the future.
+
+</p>
+										<a href="#" class="card-link mb-4 w-100">Wikipedia Article</a>
+									  </div>
+									</div>
+									
+								</div>
+								<div class="carousel-item" style="display: none;">
+								
+								  <div class="card text-center p-0" style="background-color: #f2f2f2;border-width: 0; border-radius: 0;">
+									  <div class="card-body d-flex flex-column justify-content-around align-items-center mx-4">
+										<h5 class="card-subtitle mb-2 text-muted w-100">Instruction Concerning the Criteria for the Discernment of Vocations with regard to Persons with Homosexual Tendencies in view of their Admission to the Seminary and to Holy Orders</h5>
+										<p class="card-text w-100">Since you're here, you either are someone wishing to share your knowledge of Mathematics, or you are someone who wishes to gain knowledge about Mathematics. If you are the first kind of person, have a look around, and see how you can contribute. If you are of the second kind, read on!
+
+Mathematics has many facets; though it has a wealth of applications, Mathematics is also a science.
+</p>
+										<a href="#" class="card-link mb-4 w-100">Wikipedia Article</a>
+									  </div>
+									</div>
+									
+								</div>
+							  </div>
+							  <!--
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="width: 5%;">
+								<span class="carousel-control-prev-icon" style="background-color: #5D5D5D; border-radius: 5px;" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="width: 5%;">
+								<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #5D5D5D; border-radius: 5px;"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							  -->
+							</div>
+							<!-- Carousel End -->
+							
+						</div>
+						
+						<!-- Receive Button Section -->
+						<div class="row justify-content-center p-4" id="button-box">
+							<button type="submit" class="btn btn-lg" form="users-interests" id="new-article" onclick="fetchArticle(event)" style="background-color: #4d94ff; font-weight: 600;">New Article</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+			<footer class="container-fluid page-footer footer-copyright text-center py-2 mt-5">
+				<font color="#F5F5F5">&copy; 2019 Copyright: μLearn</font>
+			</footer>
+			
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<!--
+		<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+		-->
+		<script src="scripts/main.js"></script>
+	</body>
+
+</html>
