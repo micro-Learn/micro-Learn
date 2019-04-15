@@ -203,8 +203,8 @@ function receiveAlgorithm()
 	
 	var url = webRoot + '/json/' + interestCategory + '.json';
 	var script = document.createElement("script"); //Make a script DOM node
-    script.src = url; //Set it's src to the provided URL
-    document.head.appendChild(script);
+    	script.src = url; //Set it's src to the provided URL
+   	document.head.appendChild(script);
 	
 	return true;
 }
@@ -344,7 +344,7 @@ function loginUser(userSalts)
                     userId = jsonObject.user_id;
                     password = jsonObject.password_hash;
                     window.name = username + "," + userId;
-                    window.location.href = webRoot + '/home.html';
+                    window.location.href = webRoot + '/main.html';
                 }
             }
             else if (this.status != 200)
@@ -381,7 +381,7 @@ function submitCreateUser(event)
         return;
     }
 	
-	if ((document.getElementById("exampleInputEmail2").value === "demo@gmail.com" && document.getElementById("exampleInputPassword2").value != "demotest")|| !storeNewUser())
+	if (!storeNewUser())
     {
         $('.alert').hide();
         $("#duplicateUserNameAlert").show();
@@ -392,7 +392,6 @@ function submitCreateUser(event)
 	document.getElementById("myForm").reset();
 	$("#exampleModalCenter").modal("hide");
 	$('#createUserSuccessAlert').show();
-	return;
 
     fetchUserSalts(document.getElementById("newUserName").value, createUser);
 }
@@ -413,7 +412,6 @@ function submitLoginUser(event)
 	
 	window.location.href = webRoot + '/main.html';//'file:///C:/Users/ariel/School/poosd/microlearning/website/main.html';
 	document.getElementById("myForm").reset();
-	return;
 	
     fetchUserSalts(document.getElementById("username").value, loginUser);
 }
