@@ -14,7 +14,7 @@ var myData = [
 		summary: 'The term middlebrow describes easily accessible art, usually literature, and the people who use the arts to acquire culture and "class" (social prestige). First used in the British satire magazine Punch in 1925, the term middlebrow is the intermediary "brow" descriptor between highbrow and lowbrow, which are terms derived from the pseudo-science of phrenology.'+'<br><br>'+'The term middlebrow became a pejorative usage in the modernist cultural criticism, by Dwight Macdonald, Virginia Woolf, and Russell Lynes, which served the cause of the marginalization of the popular culture in favor of high culture.[2] Culturally, the middlebrow is classed as a forced and ineffective attempt at cultural and intellectual achievement, and as characterizing literature that emphasizes emotional and sentimental connections, rather than intellectual quality and literary innovation;[3] although postmodernism more readily perceives the advantages of the middlebrow cultural-position that is aware of high culture, but is able to balance aesthetic claims with the claims of the everyday world.',
 		links: "https://en.wikipedia.org/wiki/Middlebrow"
 	},
-		title: "Cultural icon",
+	{	title: "Cultural icon",
 		summary: 'A cultural icon is an artifact that is identified by members of a culture as representative of that culture. The process of identification is subjective, and "icons" are judged by the extent to which they can be seen as an authentic proxy of that culture. When individuals perceive a cultural icon, they relate it to their general perceptions of the cultural identity represented.[1] Cultural icons can also be identified as an authentic representation of the practices of one culture by another.'
 		+'<br><br>'+
 		'In the media, many items and persons of popular culture have been called "iconic" despite their lack of durability, and the term "pop icon" is often now used synonymously. Some commentators believe that the word is overused or misused.'
@@ -26,7 +26,7 @@ var myData = [
 		"Religious icons can also become cultural icons in societies where religion and culture are deeply entwined, such as representations of the Madonna in societies with a strong Catholic tradition.",
 		links: "https://en.wikipedia.org/wiki/Cultural_icon"
 	},
-		title: "Pizza",
+	{	title: "Pizza",
 		summary: "Pizza (Italian: [ˈpittsa], Neapolitan: [ˈpittsə]) is a savory dish of Italian origin, consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and various other ingredients (anchovies, olives, meat, etc.) baked at a high temperature, traditionally in a wood-fired oven.[1] In formal settings, like a restaurant, pizza is eaten with knife and fork, but in casual settings it is cut into wedges to be eaten while held in the hand. Small pizzas are sometimes called pizzettas."
 		+'<br><br>'+
 		"The term pizza was first recorded in the 10th century in a Latin manuscript from the Southern Italian town of Gaeta in Lazio, on the border with Campania.[2] Modern pizza was invented in Naples, and the dish and its variants have since become popular in many countries.[3] It has become one of the most popular foods in the world and a common fast food item in Europe and North America, available at pizzerias (restaurants specializing in pizza), restaurants offering Mediterranean cuisine, and via pizza delivery.[3][4] Many companies sell ready-baked frozen pizzas to be reheated in an ordinary home oven."
@@ -34,11 +34,11 @@ var myData = [
 		"The Associazione Verace Pizza Napoletana (lit. True Neapolitan Pizza Association) is a non-profit organization founded in 1984 with headquarters in Naples that aims to promote traditional Neapolitan pizza.[5] In 2009, upon Italy's request, Neapolitan pizza was registered with the European Union as a Traditional Speciality Guaranteed dish,[6][7] and in 2017 the art of its making was included on UNESCO's list of intangible cultural heritage.",
 		links: "https://en.wikipedia.org/wiki/Pizza"
 	},
-		title: "Selling out",
-		summary: "'Selling out' is a common idiomatic pejorative expression for the compromising of a person's integrity, morality, authenticity, or principles in exchange for personal gain, such as money.[1] In terms of music or art, selling out is associated with attempts to tailor material to a mainstream or commercial audience. For example, a musician who alters his material to encompass a wider audience, and in turn generates greater revenue, may be labeled by fans who pre-date the change as a "sellout." A sellout also refers to someone who gives up, or disregards, hence the term 'sells' – someone or something – for some other thing or person. The term could also be used as 'sold out' depending on the context.",
+	{	title: "Selling out",
+		summary: "'Selling out' is a common idiomatic pejorative expression for the compromising of a person's integrity, morality, authenticity, or principles in exchange for personal gain, such as money.[1] In terms of music or art, selling out is associated with attempts to tailor material to a mainstream or commercial audience. For example, a musician who alters his material to encompass a wider audience, and in turn generates greater revenue, may be labeled by fans who pre-date the change as a 'sellout.' A sellout also refers to someone who gives up, or disregards, hence the term 'sells' – someone or something – for some other thing or person. The term could also be used as 'sold out' depending on the context.",
 		links: "https://en.wikipedia.org/wiki/Selling_out"
 	},
-		title: "Credibility",
+	{	title: "Credibility",
 		summary: 'Credibility comprises the objective and subjective components of the believability of a source or message.'
 		+'<br><br>'+
 		"Credibility has two key components: trustworthiness and expertise, which both have objective and subjective components. Trustworthiness is based more on subjective factors, but can include objective measurements such as established reliability. Expertise can be similarly subjectively perceived, but also includes relatively objective characteristics of the source or message (e.g., credentials, certification or information quality).[1] Secondary components of credibility include source dynamism (charisma) and physical attractiveness."

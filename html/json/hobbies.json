@@ -14,19 +14,19 @@ var myData = [
 		summary: 'Ghost hunting is the process of investigating locations that are reported to be haunted by ghosts. Typically, a ghost-hunting team will attempt to collect evidence supporting the existence of paranormal activity. Ghost hunters use a variety of electronic devices, including EMF meters, digital thermometers, both handheld and static digital video cameras, including thermographic and night vision cameras, as well as digital audio recorders. Other more traditional techniques are also used, such as conducting interviews and researching the history of allegedly haunted sites. Ghost hunters may also refer to themselves as "paranormal investigators."'+'<br><br>'+'Ghost hunting has been heavily criticized for its dismissal of the scientific method. No scientific study has ever been able to confirm the existence of ghosts. The practice is considered a pseudoscience by the vast majority of educators, academics, science writers, and skeptics. Science historian Brian Regal described ghost hunting as "an unorganized exercise in futility".',
 		links: "https://en.wikipedia.org/wiki/Ghost_hunting"
 	},
-		title: "Amateur journalism",
+	{	title: "Amateur journalism",
 		summary: "Amateur journalism is a hobby for starting small newspapers established after the U.S. Civil War, using small and inexpensive printing presses. Local circulation and exchanges, sometimes among associations were done. Conventions were also held. The hobby waxed and waned in the early 20th century, achieving a literary peak under the influence of H. P. Lovecraft and W. Paul Cook in the 1915-1925 period. The 1930s brought a redevelopment of interest with a mix of fine printing with quality material and crude leaflets from small hand-presses and mimeographs. Membership in associations has diminished to the hundreds in the United States and Canada and many are elderly as safety rules for motorized presses and hand-setting type have become lost arts.[1] Citizen journalism and blogging have come with the advent of the internet, however."
 		+'<br><br>'+
 		'Retired Tampa Tribune reporter Leland Hawes is an aficionado.',
 		links: "https://en.wikipedia.org/wiki/Amateur_journalism"
 	},
-		title: "Pyrotechnics",
+	{	title: "Pyrotechnics",
 		summary: 'Pyrotechnics is the science of using materials capable of undergoing self-contained and self-sustained exothermic chemical reactions for the production of heat, light, gas, smoke and/or sound. Its etymology stems from the Greek words pyro ("fire") and tekhnikos ("made by art").[1] Pyrotechnics include not only the manufacture of fireworks but items such as safety matches, oxygen candles, explosive bolts and fasteners, components of the automotive airbag and gas pressure blasting in mining, quarrying and demolition.'
 		+'<br><br>'+
 		'Individuals responsible for the safe storage, handling, and functioning of pyrotechnic devices are referred to as pyrotechnicians.',
 		links: "https://en.wikipedia.org/wiki/Pyrotechnics"
 	},
-		title: "Home movies",
+	{	title: "Home movies",
 		summary: "A home movie is a short amateur film or video typically made just to preserve a visual record of family activities, a vacation, or a special event, and intended for viewing at home by family and friends. Originally, home movies were made on photographic film in formats that usually limited the movie-maker to about three minutes per roll of costly camera film. The vast majority of amateur film formats lacked audio, shooting silent film."
 		+'<br><br>'+
 		'The 1970s saw the advent of consumer camcorders that could record an hour or two of video on one relatively inexpensive videocassette which also had audio. This was followed by digital video cameras that recorded to flash memory, and most recently smartphones with video recording capability, made the creation of home movies easier and much more affordable to the average person.'
@@ -36,7 +36,7 @@ var myData = [
 		"In recent years, clips from home movies have been available to wider audiences through television series such as America's Funniest Home Videos, in Great Britain You've Been Framed! and Internet online video-sharing sites such as YouTube. The popularity of the Internet, and wider availability of high-speed connections has provided new ways of sharing home movies, such as video weblogs (vlogs), and video podcasts.",
 		links: "https://en.wikipedia.org/wiki/Home_movies"
 	},
-		title: "Rock balancing",
+	{	title: "Rock balancing",
 		summary: "Rock balancing or stone balancing (stone or rock stacking) is an art, discipline, or hobby in which rocks are naturally balanced on top of one another in various positions without the use of adhesives, wires, supports, rings or any other contraptions which would help maintain the construction's balance.",
 		links: "https://en.wikipedia.org/wiki/Rock_balancing"
 	}

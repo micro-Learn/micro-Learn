@@ -14,15 +14,15 @@ var myData = [
 		summary: 'Stuffed and Starved: The Hidden Battle for the World Food System is a non-fiction book written by Raj Patel. It was published in 2008 by Melville House Publishing. Stuffed and Starved looks at the inequities of the world food system from the beginning to the end of the conventional food chain, from producers to manufacturers and distributors to consumers.'+'<br><br>'+'According to Naomi Klein, Stuffed and Starved is "One of the most dazzling books I have read in a very long time. The product of a brilliant mind, and a gift to a world hungering for justice."',
 		links: "https://en.wikipedia.org/wiki/Stuffed_and_Starved"
 	},
-		title: "Biomanufacturing",
+	{	title: "Biomanufacturing",
 		summary: "Biomanufacturing is a type of manufacturing or biotechnology that utilizes biological systems to produce commercially important biomaterials and biomolecules for use in medicines, food and beverage processing, and industrial applications. Biomanufacturing products are recovered from natural sources, such as blood, or from cultures of microbes, animal cells, or plant cells grown in specialized equipment. The cells used during the production may have been naturally occurring or derived using genetic engineering techniques.",
 		links: "https://en.wikipedia.org/wiki/Biomanufacturing"
 	},
-		title: "Food prices",
+	{	title: "Food prices",
 		summary: "Food prices refer to the (averaged) price level for food in particular countries or regions or on a global scale. The food industry's contribution to the price levels and fluctuations come from the food production process, food marketing and food distribution. Source of uncontrollable price fluctuations are varying crop yield from excess supply to harvest failure and food speculation activities. It is speculated that already the global climate change could be a major factor behind rising food prices.[1] A continuing drought in South Africa[2] may - amongst other factors - have food inflation soar 11% until end of 2016 according to the South African Reserve Bank.[3] To a certain extent, adverse price trends can be counteracted by food politics. When food commodities become too expensive on the world market, food security is in danger especially for developing countries. In keeping with the supply and demand-principle, global prices will on average continue to rise with the growing world population.",
 		links: "https://en.wikipedia.org/wiki/Food_prices"
 	},
-		title: "Open Food Facts",
+	{	title: "Open Food Facts",
 		summary: "Open Food Facts is a free, online and crowdsourced database of food products from around the world[1] licensed under the Open Database License (ODBL)[2] while its artwork —uploaded by contributors— is distributed under a Creative Commons Attribution–Share Alike license."
 		+'<br><br>'+
 		"The project was launched on 19 May 2012 by French programmer Stéphane Gigandet[4] during the Food Revolution Day organized by Jamie Oliver[5] and has won the 2013 Dataconnexions Award from Etalab[6] and the 2015 OKFN Award from Open Knowledge"
@@ -30,7 +30,7 @@ var myData = [
 		"In May 2016, its database contained more than 80,000 products from 141 countries.[8] In June 2017, thanks to the growing ecosystem of apps and open data imports from various countries, this number rose to 880,000.",
 		links: "https://en.wikipedia.org/wiki/Open_Food_Facts"
 	},
-		title: "Agricultural marketing",
+	{	title: "Agricultural marketing",
 		summary: "Agricultural marketing is inferred to cover the services involved in moving an agricultural product from the farm to the consumer. It is also the planning, organizing, directing and handling of agricultural produce in such a way as to satisfy the farmer, producer and the consumer. Numerous interconnected activities are involved in doing this, such as planning production, growing and harvesting, grading, packing and packaging, transport, storage, agro- and food processing, distribution, advertising and sale. Effectively, the term encompasses the entire range of supply chain operations. However, its key function is to help direct these services, by providing competent and able market information, thereby linking the other operations into an integrated service with targeted outcomes.",
 		links: "https://en.wikipedia.org/wiki/Agricultural_marketing"
 	}
