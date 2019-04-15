@@ -13,6 +13,36 @@ var myData = [
 		title: "2012 phenomenon",
 		summary: "The 2012 phenomenon was a range of eschatological beliefs that cataclysmic or otherwise transformative events would occur on or around 21 December 2012.[1] This date was regarded as the end-date of a 5,126-year-long cycle in the Mesoamerican Long Count calendar,[2] and as such, festivities to commemorate the date took place on 21 December 2012 in the countries that were part of the Maya civilization (Mexico, Guatemala, Honduras, and El Salvador), with main events at Chichén Itzá in Mexico, and Tikal in Guatemala."+'<br><br>'+"Various astronomical alignments and numerological formulae were proposed as pertaining to this date. A New Age interpretation held that the date marked the start of a period during which Earth and its inhabitants would undergo a positive physical or spiritual transformation, and that 21 December 2012 would mark the beginning of a new era.[6] Others suggested that the date marked the end of the world or a similar catastrophe. Scenarios suggested for the end of the world included the arrival of the next solar maximum, an interaction between Earth and the supermassive black hole at the center of the galaxy,[7] or Earth's collision with a mythical planet called Nibiru."+'<br><br>'+"Scholars from various disciplines quickly dismissed predictions of concomitant cataclysmic events as they arose. Professional Mayanist scholars stated that no extant classic Maya accounts forecast impending doom, and that the idea that the Long Count calendar ends in 2012 misrepresented Maya history and culture,[8][9][10] while astronomers rejected the various proposed doomsday scenarios as pseudoscience,[11][12] easily refuted by elementary astronomical observations.",
 		links: "https://en.wikipedia.org/wiki/2012_phenomenon"
+	},
+		title: "Resurrection",
+		summary: 'Resurrection is the concept of coming back to life after death. In a number of ancient religions, a dying-and-rising god is a deity which dies and resurrects.'
+		+'<br><br>'+
+		'The resurrection of the dead is a standard eschatological belief in the Abrahamic religions. As a religious concept, it is used in two distinct respects: a belief in the resurrection of individual souls that is current and ongoing (Christian idealism, realized eschatology), or else a belief in a singular resurrection of the dead at the end of the world. Some believe the soul is the actual vehicle by which people are resurrected.'
+		+'<br><br>'+
+		"The death and resurrection of Jesus, an example of resurrection, is the central focus of Christianity. Christian theological debate ensues with regard to what kind of resurrection is factual - either a spiritual resurrection with a spirit body into Heaven, or a material resurrection with a restored human body.[2] While most Christians believe Jesus' resurrection from the dead and ascension to Heaven was in a material body, a very small minority believes it was spiritual."
+		+'<br><br>'+
+		"There are documented rare cases of the return to life of the clinically dead which are classified scientifically as examples of the Lazarus syndrome, a term originating from the biblical story of the resurrection of Lazarus.",
+		links: "https://en.wikipedia.org/wiki/Resurrection"
+	},
+		title: "Insects in mythology",
+		summary: 'Insects have appeared in mythology around the world from ancient times. Among the insect groups featuring in myths are the bee, fly, butterfly, cicada, dragonfly, praying mantis and scarab beetle.'
+		+'<br><br>'+
+		'Insect myths may present the origins of a people, or of their skills such as finding honey. Other myths concern the nature of the gods or their actions, and how they may be appeased. A variety of myths tell of transformations, such as between the soul of a living or dead person and a butterfly in Japan. Finally, insects appear as symbols of human qualities such as swiftness, or as portents of forthcoming trouble; accordingly, they may appear as amulets to ward off evil.',
+		links: "https://en.wikipedia.org/wiki/Insects_in_mythology"
+	},
+		title: "Archaeomythology",
+		summary: 'Archaeomythology refers to the study of archaeology through the discipline of mythology.[1] It is an approach developed by Marija Gimbutas and mainly applied to Eastern European countries. Commenting in The Oxford Handbook of the Archaeology of Ritual and Religion, Tonno Jonuks wrote "Despite stressing the importance of archaeology and using its sources to a greater extent than any other school in the Baltic countries, studies of archaeo-mythology are still based upon folklore and archaeology has only been used selectively. The greater part of archaeological material which could not be reconciled with folklore has been left out and many phenomena of past religions have thus not been discussed as they cannot be compared with folklore."',
+		links: "https://en.wikipedia.org/wiki/Archaeomythology"
+	},
+		title: "Culture hero",
+		summary: 'A culture hero is a mythological hero specific to some group (cultural, ethnic, religious, etc.) who changes the world through invention or discovery. A typical culture hero might be credited as the discoverer of fire, or agriculture, songs, tradition, law or religion, and is usually the most important legendary figure of a people, sometimes as the founder of its ruling dynasty.'
+		+'<br><br>'+
+		'In some cultures, there are dualistic myths, featuring two culture heroes arranging the world in a complementary manner. Dualistic cosmologies are present in all inhabited continents[1] and show great diversity: they may feature culture heroes, but also demiurges (exemplifying dualistic creation myths in the latter case), or other beings; the two heroes may compete or collaborate; they may be conceived as neutral or contrasted as good versus evil; be of the same importance or distinguished as powerful versus weak; be brothers (even twins) or be not relatives at all.'
+		+'<br><br>'+
+		'In many cultures the trickster and the culture hero are combined.[3] To illustrate, Prometheus, in Greek mythology, stole fire from the gods to give it to humans as did Maui in Polynesian mythology.'
+		+'<br><br>'+
+		"In many Native American mythologies and beliefs, the coyote spirit stole fire from the gods (or stars or sun) and is more of a trickster than a culture hero. Natives from the Southeastern United States typically saw a rabbit trickster/culture hero, and Pacific Northwest native stories often feature a raven in this role: in some stories, Raven steals fire from his uncle Beaver and eventually gives it to humans. The Western African trickster spider Ananse is also widely disseminated. In Norse mythology, Odin (yet another trickster deity) is said to have stolen the mead of poetry from Jotunheim and is credited as the discoverer of the runes.",
+		links: "https://en.wikipedia.org/wiki/Culture_hero"
 	}
 ]
 

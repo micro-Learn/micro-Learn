@@ -13,6 +13,32 @@ var myData = [
 		title: "Virtual environment",
 		summary: 'Any networked application that permits both interaction with the computing environment and the work of other users. Email, chat, web-based document sharing applications are all examples of virtual environments. Simply put, it is a networked common operating space. Once the fidelity of the virtual environment is such that it "creates a psychological state in which the individual perceives himself or herself as existing within the virtual environment" (Blascovich, 2002, pg 129) then the virtual environment (VE) had progressed into the realm of immersive virtual environments (IVEs).',
 		links: "https://en.wikipedia.org/wiki/Virtual_environment"
+	},
+	{
+		title: "Critical code studies",
+		summary: "Critical code studies (CCS) is an emerging academic subfield, related to software studies, digital humanities, cultural studies, computer science, human-computer interface, and the do-it-yourself maker culture. Its primary focus is on the cultural significance of computer code, without excluding or focusing solely upon the code's functional purpose."
+		+'<br><br>'+
+		"As introduced by Mark C. Marino,[1] critical code studies was initially a method by which scholars 'can read and explicate code the way we might explicate a work of literature,' but the concept also draws upon Espen Aarseth's conception of a cybertext as a 'mechanical device for the production and consumption of verbal signs' (Cybertext, 21), arguing that in order to understand a digital artifact we must also understand the constraints and capabilities of the authoring tools used by the creator of the artifact, as well as the memory storage and interface required for the user to experience the digital artifact."
+		+'<br><br>'+
+		'Evidence that critical code studies has gained momentum since 2006 include an article by Matthew Kirschenbaum in the Chronicle of Higher Education,[2] CCS sessions at the Modern Language Association in 2011 that were "packed" with attendees,[3] several academic conferences devoted wholly to critical code studies, and a book devoted to the explication of a single line of computer code, titled 10 PRINT CHR$(205.5+RND(1)); : GOTO 10.',
+		links: "https://en.wikipedia.org/wiki/Critical_code_studies"
+	},
+	{
+		title: "Instance selection",
+		summary: "Instance selection (or dataset reduction, or dataset condensation) is an important data pre-processing step that can be applied in many machine learning (or data mining) tasks.[1] Approaches for instance selection can be applied for reducing the original dataset to a manageable volume, leading to a reduction of the computational resources that are necessary for performing the learning process. Algorithms of instance selection can also be applied for removing noisy instances, before applying learning algorithms. This step can improve the accuracy in classification problems."
+		+'<br><br>'+
+		"Algorithm for instance selection should identify a subset of the total available data to achieve the original purpose of the data mining (or machine learning) application as if the whole data had been used. Considering this, the optimal outcome of IS would be the minimum data subset that can accomplish the same task with no performance loss, in comparison with the performance achieved when the task is performed using the whole available data. Therefore, every instance selection strategy should deal with a trade-off between the reduction rate of the dataset and the classification quality.",
+		links: "https://en.wikipedia.org/wiki/Instance_selection"
+	},
+	{
+		title: "Trace Cache",
+		summary: "Trace Cache (also known as execution trace cache) is a very specialized cache which stores the dynamic stream of instructions known as trace. It helps in increasing the instruction fetch bandwidth and decreasing power consumption (in the case of Intel Pentium 4 ) by storing traces of instructions that have already been fetched and decoded.[1] Trace Processor[2] is an architecture designed around the Trace Cache and processes the instructions at trace level granularity.",
+		links: "https://en.wikipedia.org/wiki/Trace_Cache"
+	},
+	{
+		title: "Quantum image processing",
+		summary: "Quantum image processing (QIP) is primarily devoted to using quantum computing and quantum information processing to create and work with quantum images.[1] Due to some of the astounding properties inherent to quantum computation, notably entanglement and parallelism, it is anticipated that QIP technologies will offer capabilities and performances that are, as yet, unrivaled by their traditional equivalents. These improvements could be in terms of computing speed, guaranteed security, and minimal storage requirements, etc.",
+		links: "https://en.wikipedia.org/wiki/Quantum_image_processing"
 	}
 ]
 

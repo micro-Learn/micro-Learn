@@ -13,6 +13,32 @@ var myData = [
 		title: "Applied physics",
 		summary: 'Applied physics is intended for a particular technological or practical use. It is usually considered as a bridge or connection between physics and engineering.'+'<br><br>'+'"Applied" is distinguished from "pure" by a subtle combination of factors, such as the motivation and attitude of researchers and the nature of the relationship to the technology or science that may be affected by the work. Applied physics is rooted in the fundamental truths and basic concepts of the physical sciences, but is concerned with the utilization of scientific principles in practical devices and systems, and in the application of physics in other areas of science.'+'<br><br>'+"It usually differs from engineering in that an applied physicist may not be designing something in particular, but rather is using physics or conducting physics research with the aim of developing new technologies or solving an engineering problem. This approach is similar to that of applied mathematics."+'<br><br>'+"In other words, applied physics is rooted in the fundamental truths and basic concepts of the physical sciences but is concerned with the utilization of these scientific principles in practical devices and systems."+'<br><br>'+"Applied physicists can also be interested in the use of physics for scientific research. For instance, the field of accelerator physics can contribute to research in theoretical physics by working with engineers enabling design and construction of high-energy colliders.",
 		links: "https://en.wikipedia.org/wiki/Applied_physics"
+	},
+		title: "Engineering studies",
+		summary: "Engineering studies is an interdisciplinary branch of social sciences and humanities devoted to the study of engineers and their activities, often considered a part of science and technology studies (STS), and intersecting with and drawing from engineering education research. Studying engineers refers among other to the history and the sociology of their profession, its institutionalization and organization, the social composition and structure of the population of engineers, their training, their trajectory, etc. A subfield is for instance Women in engineering. Studying engineering refers to the study of engineering activities and practices, their knowledge and ontologies, their role into the society, their engagement."
+		+'<br><br>'+
+		"Engineering studies investigates how social, political, economical, cultural and historical dynamics affect technological research, design, engineering and innovation, and how these, in turn, affect society, economics, politics and culture."
+		+'<br><br>'+
+		"Engineering studies's mission is to further develop many different aspects of studies of engineers and engineering, it investigates in areas such as: history, culture, polity and etc. These studies will have influence on world's engineering level and productivity.[1]Which it provides information and scholar resources for researchers who's interested in studies of engineers and engineering. Also, engineering studies provides a platform for engineering studies research to be reviewed and discussed.",
+		links: "https://en.wikipedia.org/wiki/Engineering_studies"
+	},
+		title: "Iron Ring",
+		summary: "Microelectronics is a subfield of electronics. As the name suggests, microelectronics relates to the study and manufacture (or microfabrication) of very small electronic designs and components. Usually, but not always, this means micrometre-scale or smaller. These devices are typically made from semiconductor materials. Many components of normal electronic design are available in a microelectronic equivalent. These include transistors, capacitors, inductors, resistors, diodes and (naturally) insulators and conductors can all be found in microelectronic devices. Unique wiring techniques such as wire bonding are also often used in microelectronics because of the unusually small size of the components, leads and pads. This technique requires specialized equipment and is expensive.The Iron Ring is a ring worn by many Canadian-trained engineers, as a symbol and reminder of the obligations and ethics associated with their profession. The ring is presented to engineering graduates in a closed ceremony known as The Ritual of the Calling of an Engineer.[1][2] The concept of the ritual and its Iron Rings originated from H. E. T. Haultain in 1922, with assistance from Rudyard Kipling, who crafted the ritual at Haultain's request."
+		+'<br><br>'+
+		"The ring symbolizes the pride which engineers have in their profession, while simultaneously reminding them of their humility. The ring serves as a reminder to the engineer and others of the engineer's obligation to live by a high standard of professional conduct. It is not a symbol of qualification as an engineer – this is determined by the provincial and territorial licensing bodies.",
+		links: "https://en.wikipedia.org/wiki/Iron_Ring"
+	},
+		title: "Scalability",
+		summary: "Scalability is the property of a system to handle a growing amount of work by adding resources to the system."
+		+'<br><br>'+
+		"In an economic context, a scalable business model implies that a company can increase sales given increased resources. For example, a package delivery system is scalable because more packages can be delivered by adding more delivery vehicles. However, if all packages had to first pass through a single warehouse for sorting, the system would not be scalable, because one warehouse can handle only a limited number of packages."
+		+'<br><br>'+
+		"In computing, scalability is a characteristic of computers, networks, algorithms, networking protocols, programs and applications. An example is a search engine, which must support increasing numbers of users, and the number of topics it indexes.",
+		links: "https://en.wikipedia.org/wiki/Scalability"
+	},
+		title: "Virtual engineering",
+		summary: "Virtual engineering is defined as integrating geometric models and related engineering tools such as analysis, simulation, optimization, and decision making tools, etc., within a computer-generated environment that facilitates multidisciplinary collaborative product development. Virtual engineering shares many characteristics with software engineering, such as the ability to obtain many different results through different implementations.",
+		links: "https://en.wikipedia.org/wiki/Virtual_engineering"
 	}
 ]
 

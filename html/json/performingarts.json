@@ -13,6 +13,32 @@ var myData = [
 		title: "Aerial silk",
 		summary: "Aerial silks (also known as aerial contortion, aerial ribbons, aerial tissues, fabric, ribbon, or tissu, depending on personal preference) is a type of performance in which one or more artists perform aerial acrobatics while hanging from a fabric. The fabric may be hung as two pieces, or a single piece, folded to make a loop, classified as hammock silks. Performers climb the suspended fabric without the use of safety lines and rely only on their training and skill to ensure safety. They use the fabric to wrap, suspend, drop, swing, and spiral their bodies into and out of various positions. Aerial silks may be used to fly through the air, striking poses and figures while flying. Some performers use dried or spray rosin on their hands and feet to increase the friction and grip on the fabric.",
 		links: "https://en.wikipedia.org/wiki/Aerial_silk"
+	},
+		title: "Circus",
+		summary: 'A circus is a company of performers who put on diverse entertainment shows that may include clowns, acrobats, trained animals, trapeze acts, musicians, dancers, hoopers, tightrope walkers, jugglers, magicians, unicyclists, as well as other object manipulation and stunt-oriented artists. The term circus also describes the performance which has followed various formats through its 250-year modern history. Philip Astley is credited with being the father of the modern circus when he opened the first circus in 1768 in England. A skilled equestrian, Astley demonstrated trick riding, riding in a circle rather than a straight line as his rivals did, and thus chanced on the format which was later named a "circus". In 1770 he hired acrobats, tightrope walkers, jugglers and a clown to fill in the pauses between acts. Performances developed significantly through the next fifty years, with large-scale theatrical battle reenactments becoming a significant feature. The traditional format, whereby a ringmaster introduces a varied selection of acts that mostly perform choreographed acts to traditional music, developed in the latter part of the 19th century and continued almost universally to be the main style of circus up until the 1970s.'
+		+'<br><br>'+
+		'As styles of performance have developed since the time of Astley, so too have the types of venues where these circuses have performed. The earliest modern circuses were performed in open air structures with limited covered seating. From the late 18th to late 19th century, custom-made circus buildings (often wooden) were built with various types of seating, a centre ring, and sometimes a stage. The traditional large tents, commonly known as "Big Tops" were introduced in the mid-19th century as touring circuses superseded static venues. These tents eventually became the most common venue and remain so to the present day. Contemporary circuses perform in a variety of venues including tents, theatres and casinos. Many circus performances are still held in a ring usually 13 m (42 ft) in diameter. This dimension was adopted by Astley in the late 18th century as the minimum diameter that enabled an acrobatic horse rider to stand upright on a cantering horse to perform their tricks.'
+		+'<br><br>'+
+		"Contemporary circus has been credited with reviving the circus tradition since the 1980s when a number of groups introduced circuses based almost solely on human skills and which drew from other performing art skills and styles.",
+		links: "https://en.wikipedia.org/wiki/Circus"
+	},
+		title: "Play (theatre)",
+		summary: 'A play is a form of literature written by a playwright, usually consisting of dialogue or singing between characters, intended for theatrical performance rather than just reading. Plays are performed at a variety of levels, from Broadway, Off-Broadway, regional theater, to Community theatre, as well as university or school productions. There are rare dramatists, notably George Bernard Shaw, who have had little preference as to whether their plays were performed or read. The term "play" can refer to both the written texts of playwrights and to their complete theatrical performance.',
+		links: "https://en.wikipedia.org/wiki/Play_(theatre)"
+	},
+		title: "Martial arts",
+		summary: "Martial arts are codified systems and traditions of combat practiced for a number of reasons such as self-defense, military and law enforcement applications, physical, mental and spiritual development; as well as entertainment and the preservation of a nation's intangible cultural heritage."
+		+'<br><br>'+
+		'Although the term martial art has become associated with the fighting arts of East Asia, it originally referred to the combat systems of Europe as early as the 1550s. The term is derived from Latin and means "arts of Mars", the Roman god of war.[1] Some authors have argued that fighting arts or fighting systems would be more appropriate on the basis that many martial arts were never "martial" in the sense of being used or created by professional warriors.',
+		links: "https://en.wikipedia.org/wiki/Martial_arts"
+	},
+		title: "Magician's assistant",
+		summary: "A magician's assistant is a performer in a magic act who is not billed as the magician or principal name in the act. The role of an assistant can include holding the props that are used by a magician, shifting props onto and off the stage, and serving as a living prop in illusions that involve manipulation of the human body. Other aspects of the role can include dancing or acting as visual ornamentation, sometimes for simple aesthetic purposes and sometimes to misdirect audience attention. The figure of the glamorous female assistant has become a stereotype or icon in art, popular media and fiction."
+		+'<br><br>'+
+		"Although magician's assistants appear to play a supporting role and receive a lesser billing than the magician who appears to be the source of illusions, the assistant is often the one making the mechanics of the illusions work. In the words of Joanie Spina, who worked for 11 years as principal assistant, choreographer and artistic consultant to illusionist David Copperfield:"
+		+'<br><br>'+
+		'...I did find fault with the term "assistant" because it sounds like someone rolling props on and off stage when many of us were highly trained actors and dancers.',
+		links: "https://en.wikipedia.org/wiki/Magician%27s_assistant"
 	}
 ]
 

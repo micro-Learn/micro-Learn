@@ -13,6 +13,28 @@ var myData = [
 		title: "Spatial analysis",
 		summary: 'Spatial analysis or spatial statistics includes any of the formal techniques which study entities using their topological, geometric, or geographic properties. Spatial analysis includes a variety of techniques, many still in their early development, using different analytic approaches and applied in fields as diverse as astronomy, with its studies of the placement of galaxies in the cosmos, to chip fabrication engineering, with its use of "place and route" algorithms to build complex wiring structures. In a more restricted sense, spatial analysis is the technique applied to structures at the human scale, most notably in the analysis of geographic data.'+'<br><br>'+"Complex issues arise in spatial analysis, many of which are neither clearly defined nor completely resolved, but form the basis for current research. The most fundamental of these is the problem of defining the spatial location of the entities being studied."+'<br><br>'+"Classification of the techniques of spatial analysis is difficult because of the large number of different fields of research involved, the different fundamental approaches which can be chosen, and the many forms the data can take.",
 		links: "https://en.wikipedia.org/wiki/Spatial_analysis"
+	},
+		title: "Extreme environment",
+		summary: "An extreme environment is a habitat that is considered very hard to survive in due to its considerably extreme conditions such as temperature, accessibility to different energy sources or under high pressure. For an area to be considered an extreme environment, it must contain certain conditions and aspects that are considered very hard for other life forms to survive. Pressure conditions may be extremely high or low; high or low content of oxygen or carbon dioxide in the atmosphere; high levels of radiation, acidity, or alkalinity; absence of water; water containing a high concentration of salt or sugar; the presence of sulphur, petroleum, and other toxic substances."
+		+'<br><br>'+
+		"Examples of extreme environments include the geographical poles, very arid deserts, volcanoes, deep ocean trenches, upper atmosphere, Mt Everest, outer space, and the environments of every planet in the Solar System except the Earth. Any organisms living in these conditions are often very well adapted to their living circumstances, which is usually a result of long-term evolution. Physiologists have long known that organisms living in extreme environments are especially likely to exhibit clear examples of evolutionary adaptation because of the presumably intense past natural selection they have experienced.",
+		links: "https://en.wikipedia.org/wiki/Extreme_environment"
+	},
+		title: "Natural landscape",
+		summary: "A natural landscape is the original landscape that exists before it is acted upon by human culture.[note 1] The natural landscape and the cultural landscape are separate parts of the landscape.[note 2] However, in the twenty-first century landscapes that are totally untouched by human activity no longer exist, so that reference is sometimes now made to degrees of naturalness within a landscape."
+		+'<br><br>'+
+		'In Silent Spring (1962) Rachel Carson describes a roadside verge as it used to look: "Along the roads, laurel, viburnum and alder, great ferns and wildflowers delighted the traveler’s eye through much of the year" and then how it looks now following the use of herbicides: "The roadsides, once so attractive, were now lined with browned and withered vegetation as though swept by fire".[1] Even though the landscape before it is sprayed is biologically degraded, and may well contains alien species, the concept of what might constitute a natural landscape can still be deduced from the context.'
+		+'<br><br>'+
+		'The phrase "natural landscape" was first used in connection with landscape painting, and landscape gardening, to contrast a formal style with a more natural one, closer to nature. Alexander von Humboldt (1769 – 1859) was to further conceptualize this into the idea of a natural landscape separate from the cultural landscape. Then in 1908 geographer Otto Schlüter developed the terms original landscape (Urlandschaft) and its opposite cultural landscape (Kulturlandschaft) in an attempt to give the science of geography a subject matter that was different from the other sciences. An early use of the actual phrase "natural landscape" by a geographer can be found in Carl O. Sauers paper "The Morphology of Landscape" (1925).',
+		links: "https://en.wikipedia.org/wiki/Natural_landscape"
+	},
+		title: "Population density",
+		summary: "Population density (in agriculture: standing stock and standing crop) is a measurement of population per unit area or unit volume; it is a quantity of type number density. It is frequently applied to living organisms, and most of the time to humans. It is a key geographical term.[1] In simple terms population density refers to the number of people living in an area per kilometer square.",
+		links: "https://en.wikipedia.org/wiki/Population_density"
+	},
+		title: "Internet geography",
+		summary: "Internet geography, also called cybergeography, is a subdiscipline of geography that studies the spatial organization of the Internet, from social, economic, cultural, and technological perspectives.[1][2] The core assumption of Internet geography is that the location of servers, websites, data, services, and infrastructure is key to understand the development and the dynamics of the Internet. Among the topics covered by this discipline, of particular importance are information geography and digital divides.",
+		links: "https://en.wikipedia.org/wiki/Internet_geography"
 	}
 ]
 

@@ -1,5 +1,5 @@
 var APIRoot = "http://www.micro-learn.xyz/php";
-var webRoot = "http://www.micro-learn.xyz";
+var webRoot = "http://www.micro-learn.xyz";//file:///C:/Users/ariel/School/poosd/microlearning/website
 var fileExtension = ".php";
 var userInfo = new Object();
 var userId = 0;
@@ -81,7 +81,9 @@ function fetchNewArticle(jsonSendObj)
             {
                 $('.alert').hide();
 				var jsonArray = JSON.parse(xhr.responseText);
-                fillArticleCard(jsonArray);
+				document.getElementById("article-title").innerHTML = jsonArray.title;
+				document.getElementById("article-summary").innerHTML = jsonArray.summary;
+				document.getElementById("article-link").href = jsonArray.links;
             }
             else if (this.status != 200)
             {
@@ -98,13 +100,6 @@ function fetchNewArticle(jsonSendObj)
         alert(err.message);
         return 'err';
     }
-}
-
-function fillArticleCard(dataArray) //dataArray vs single object
-{
-	document.getElementById("article-title").innerHTML = dataArray.title;
-	document.getElementById("article-summary").innerHTML = dataArray.summary;
-	document.getElementById("article-link").href = dataArray.links;
 }
 
 function fetchArticle(event)
@@ -372,7 +367,14 @@ function submitCreateUser(event)
 {
     event.preventDefault();
 
-    if (document.getElementById("exampleInputEmail2").value.length === 0 || document.getElementById("exampleInputPassword2").value.length === 0	|| !(exampleInputEmail2.checkValidity()))
+    if (document.getElementById("exampleInputEmail2").value.length === 0 || document.getElementById("exampleInputPassword2").value.length === 0	)
+    {
+        $('.alert').hide();
+        $("#emptyRegisterAlert").show();
+        return;
+    }
+	
+	if (!(exampleInputEmail2.checkValidity()))
     {
         $('.alert').hide();
         $("#invalidCreateUserAlert").show();
