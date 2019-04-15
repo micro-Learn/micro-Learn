@@ -13,6 +13,40 @@ var myData = [
 		title: "Pixel artist",
 		summary: "A pixel artist is a graphic designer who specializes in computer art and can refer to a number of artistic and professional disciplines which focus on visual communication and presentation.[1][2][3] Similar to chromoluminarism used in the pointillism style of painting, in which small distinct points of primary colors create the impression of a wide selection of secondary and intermediate colors, a pixel artist works with pixels, the smallest piece of information in an image.[4] The technique relies on the perceptive ability of the eye and mind of the viewer to mix the color spots into a fuller range of tones. Pixel art is often utilitarian and anonymous.[3][5] Pixel design can refer to both the process (designing) by which the communication is created and the products (designs) which are generated."+'<br><br>'+"Common uses of pixel design include print and broadcast media, web design and games.[1][3][7] For example, a product package might include a logo or other artwork, organized text and pure design elements such as shapes and color which unify the piece. Composition is one of the most important features of design especially when utilizing pre-existing materials or using diverse elements. Pixel artists can also be a specialist in computer animation such as Computer Animation Production System users in post production of animated films and rendering (computer graphics) images like raster graphics."+'<br><br>'+'In the 2000s, pixel artists such as Tyler West, Stephane Martiniere and Daniel Dociu have gained international notoriety and artistic recognition, due in part to the popularity of computer and video games.[11][12] For instance the E3 Media and Business Summit, an annual trade show for the computer and video games industry, has a concurrent juried art show, "Into the Pixel" starting in 2003.[12][13][14][15] Jurist and Getty Research Institute curator Louis Marchesano noted that most of the works were concept pieces used in the development of games.'+'<br><br>'+'Pixel artists are also used in digital forensics, an emerging field, to both create and detect fraud in all forms of media including "the courts, politics and scientific journals".[16] For instance, the Federal Office of Research Integrity has said that the percent of allegations of fraud they investigated involved contested images has risen from less than 3 in 1990 to 44.1 percent in 2006.',
 		links: "https://en.wikipedia.org/wiki/Pixel_artist"
+	},
+	{
+		title: "Ecodesign",
+		summary: "Ecodesign is an approach to designing products with special consideration for the environmental impacts of the product during its whole lifecycle. In a life cycle assessment, the life cycle of a product is usually divided into procurement, manufacture, use, and disposal."
+		+'<br><br>'+
+		"Ecodesign is a growing responsibility and understanding of our ecological footprint on the planet. Green awareness, overpopulation, industrialization and an increased environmental population have led to the questioning of consumer values. It is imperative to search for new building solutions that are environmentally friendly and lead to a reduction in the consumption of materials and energy.",
+		links: "https://en.wikipedia.org/wiki/Ecodesign"
+	},
+	{
+		title: "Modular design",
+		summary: 'Modular design, or "modularity in design", is an approach (design and otherwise) that subdivides a system into smaller parts called modules or skids, that can be independently created and then used in different systems. A modular system can be characterized by functional partitioning into discrete scalable, reusable modules; rigorous use of well-defined modular interfaces; and making use of industry standards for interfaces.'
+		+'<br><br>'+
+		"Modularity offers benefits such as reduction in cost (due to less customization), shorter learning time, flexibility in design, augmentation (adding new solution by merely plugging in a new module), and exclusion."
+		+'<br><br>'+
+		'Cars, computers, process systems, solar panels, wind turbines, elevators, furniture, looms, railroad signaling systems, telephone exchanges, pipe organs, synthesizers, electric power distribution systems and modular buildings are examples of modular systems.'
+		+'<br><br>'+
+		"Evolution also results in the modular design of species in that homologous modules sharing approximately the same form or function appear in different organisms.[1] Computers use modularity to overcome changing customer demands and to make the manufacturing process more adaptive to change (see modular programming).[2] Modular design is an attempt to combine the advantages of standardization (high volume normally equals low manufacturing costs) with those of customization. A downside to modularity (and this depends on the extent of modularity) is that low quality modular systems are not optimized for performance. This is usually due to the cost of putting up interfaces between modules.",
+		links: "https://en.wikipedia.org/wiki/Modular_design"
+	},
+	{
+		title: "Safe-life design",
+		summary: "In safe-life design products are designed to survive a specific design life with a chosen reserve."
+		+'<br><br>'+
+		"Safe life is particularly relevant to metal aircraft, where airframe components are subjected to varying loads over the lifetime of the aircraft which makes them susceptible to metal fatigue. In certain areas such as in wing or tail components structural failure in flight would be catastrophic."
+		+'<br><br>'+
+		'The safe-life design technique is employed in critical systems which are either very difficult to repair or may cause severe damage to life and property. These systems are designed to work for years without requirement of any repairs.'
+		+'<br><br>'+
+		"The drawback is that products designed with a safe-life approach are over-built or allocated more resources than they are expected to need, which may be uneconomical. In order to maintain the designed safety, they will have to be replaced after the design life has expired, while they may still have a considerable life ahead of them. To counter these drawbacks, alternative design philosophies like fail-safe design and fault-tolerant design were developed.",
+		links: "https://en.wikipedia.org/wiki/Safe-life_design"
+	},
+	{
+		title: "Behavioural design",
+		summary: "Behavioural design is a sub-category of design, which is concerned with how design can shape, or be used to influence human behaviour.[1][2] All approaches of design for behaviour change acknowledge that artefacts have an important influence on human behaviour and/or behavioural decisions. They strongly draw on theories of behavioural change, including the division into personal, behavioural, and environmental characteristics as drivers for behaviour change.[2] Areas in which design for behaviour change has been most commonly applied include health and wellbeing, sustainability, safety and social context, as well as crime prevention.",
+		links: "https://en.wikipedia.org/wiki/Behavioural_design"
 	}
 ]
 

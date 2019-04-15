@@ -13,6 +13,34 @@ var myData = [
 		title: "Pilates",
 		summary: 'Pilates is a physical fitness system developed in the early 20th century by Joseph Pilates, after whom it was named. Pilates called his method "Contrology".[2] It is practiced worldwide, especially in Western countries such as Canada, the United States and the United Kingdom. As of 2005, there were 11 million people practicing the discipline regularly and 14,000 instructors in the United States.'+'<br><br>'+"There is only limited evidence to support the use of Pilates to alleviate low back pain,[4] or improve balance in elderly people. Evidence from studies show that while Pilates improves balance, limited data exists on whether this impacts on falls by the elderly. [5] Pilates has not been shown to be an effective treatment for any medical condition.[6] There is some evidence regular Pilates sessions can help muscle conditioning in healthy adults, when compared to doing no exercise.",
 		links: "https://en.wikipedia.org/wiki/Pilates"
+	},
+		title: "Yoga",
+		summary: 'Yoga (/ˈjoʊɡə/;[1] Sanskrit: योग; About this soundpronunciation) is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India. Yoga is one of the six orthodox schools of Hindu philosophical traditions.[2] There is a broad variety of yoga schools, practices, and goals[3] in Hinduism, Buddhism, and Jainism.[4][5][6] The term "yoga" in the Western world often denotes a modern form of Hatha yoga, consisting largely of the postures called asanas.'
+		+'<br><br>'+
+		"The origins of yoga have been speculated to date back to pre-Vedic Indian traditions; it is mentioned in the Rigveda,[note 1] but most likely developed around the sixth and fifth centuries BCE,[8] in ancient India's ascetic and śramaṇa movements.[9][note 2] The chronology of earliest texts describing yoga-practices is unclear, varyingly credited to Upanishads.[10] The Yoga Sutras of Patanjali date from the first half of the 1st millennium CE,[11][12] but only gained prominence in the West in the 20th century.[13] Hatha yoga texts emerged around the 11th century with origins in tantra."
+		+'<br><br>'+
+		"Yoga gurus from India later introduced yoga to the West,[16] following the success of Swami Vivekananda in the late 19th and early 20th century with his adaptation of yoga tradition, excluding asanas.[16] In the 1980s, a very different form of modern yoga, with an increasing number of asanas and few other practices, became popular as a system of exercise across the Western world.[15] Yoga in Indian traditions, however, is more than physical exercise; it has a meditative and spiritual core.[17] One of the six major orthodox schools of Hinduism is also called Yoga, which has its own epistemology and metaphysics, and is closely related to Hindu Samkhya philosophy."
+		+'<br><br>'+
+		"Many studies have tried to determine the effectiveness of modern yoga as a complementary intervention for cancer, schizophrenia, asthma, and heart disease.[19][20] The results of these studies have been mixed and inconclusive.[19][20] On December 1, 2016, yoga was listed by UNESCO as an intangible cultural heritage.",
+		links: "https://en.wikipedia.org/wiki/Yoga"
+	},
+		title: "Weight cutting",
+		summary: 'Weight cutting is the practice of fast weight loss prior to a sporting competition. It most frequently happens in order to qualify for a lower weight class (usually in combat sports, where weight is a significant advantage) or in sports where it is advantageous to weigh as little as possible (most notably equestrian sports). There are two types of weight cutting: one method is to lose weight in the form of fat and muscle in the weeks prior to an event; the other is to lose weight in the form of water in the final days before competition.'
+		+'<br><br>'+
+		'Nutritional experts rarely give advice on how to cut weight safely or effectively, and recommend against cutting weight.[citation needed] However, many athletes choose to do it because they wish to gain an advantage in their sport.',
+		links: "https://en.wikipedia.org/wiki/Weight_cutting"
+	},
+		title: "Street workout",
+		summary: "Street workout is a physical activity performed mostly in outdoor parks or public facilities. It originated in Ancient Greece, but became a popular movement in Russia, Eastern Europe, and the United States, especially in New York City, Baltimore's urban neighborhoods and Myanmar, and Morocco too at recent days.[citation needed] It has now spread all over the world. It is a combination of athletics, calisthenics, and sports.[1][unreliable source?] Street workout is a modern name for bodyweight workouts in outdoor parks. Street workout teams and organized competitions exist.",
+		links: "https://en.wikipedia.org/wiki/Street_workout"
+	},
+		title: "Chinese Wand Exercise",
+		summary: 'Chinese Wand Exercise is an obscure ancient exercise system, related to the martial art Kung Fu. The “wand” in Chinese Wand Exercise is a 48-50” long dowel, 1” in diameter, (wood or bamboo, for example), used as a fulcrum for balance, form and posture. “Its the pyramid effect, with you as center.”[1]	“Seventeen gentle bending, twisting and lunging movements flow in exact order, specially designed to get the blood circulating more efficiently throughout the body.[2] These exercises are done in gradual, easy "Stages" while using an original Chinese deep-breathing technique” and chi energy, and can be easy or more challenging as the individual chooses.'
+		+'<br><br>'+
+		'Together they exercise every major muscle in the body and take no more than 20 minutes to complete. The relative ease of the 17 moves (11 standing and six floor exercises) engage all the organs and muscles of the body together in harmony rather than separating out one part of the body from another. This produces a more efficient way of staying fit and healthy by increasing and balancing the chi energy.'
+		+'<br><br>'+
+		'“Chinese Wand prevents illness and delays the aging process of many cells.”[4] Together, they exercise the entire body safely and gently. Chinese Wand was known as a “preventive” of disease while acupuncture was the “treatment.”',
+		links: "https://en.wikipedia.org/wiki/Chinese_Wand_Exercise"
 	}
 ]
 

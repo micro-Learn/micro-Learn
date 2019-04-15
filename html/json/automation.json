@@ -13,6 +13,34 @@ var myData = [
 		title: "Self-driving car",
 		summary: 'A self-driving car, also known as a robot car, autonomous car, or driverless car,[1][2] is a vehicle that is capable of sensing its environment and moving with little or no human input.'+'<br><br>'+'Autonomous cars combine a variety of sensors to perceive their surroundings, such as radar, Lidar, sonar, GPS, odometry and inertial measurement units. Advanced control systems interpret sensory information to identify appropriate navigation paths, as well as obstacles and relevant signage.',
 		links: "https://en.wikipedia.org/wiki/Self-driving_car"
+	},
+	{
+		title: "Pneumatic motor",
+		summary: "A pneumatic motor (air motor) or compressed air engine is a type of motor which does mechanical work by expanding compressed air. Pneumatic motors generally convert the compressed air energy to mechanical work through either linear or rotary motion. Linear motion can come from either a diaphragm or piston actuator, while rotary motion is supplied by either a vane type air motor, piston air motor, air turbine or gear type motor."
+		+'<br><br>'+
+		"Pneumatic motors have existed in many forms over the past two centuries, ranging in size from hand-held motors to engines of up to several hundred horsepower. Some types rely on pistons and cylinders; others on slotted rotors with vanes (vane motors) and others use turbines. Many compressed air engines improve their performance by heating the incoming air or the engine itself. Pneumatic motors have found widespread success in the hand-held tool industry,[1] but are also used stationary in a wide range of industrial applications. Continual attempts are being made to expand their use to the transportation industry. However, pneumatic motors must overcome inefficiencies before being seen as a viable option in the transportation industry.",
+		links: "https://en.wikipedia.org/wiki/Pneumatic_motor"
+	},
+	{
+		title: "Mix automation",
+		summary: "Modern digital audio consoles or mixers use automation. Automation allows the console to remember the audio engineer's adjustment of faders during the post-production editing process. A timecode is necessary for synchronization of automation.",
+		links: "https://en.wikipedia.org/wiki/Mix_automation"
+	},
+	{
+		title: "Open Platform Communications",
+		summary: "Open Platform Communications (OPC) is a series of standards and specifications for industrial telecommunication. An industrial automation task force developed the original standard in 1996 under the name OLE for Process Control (Object Linking and Embedding for process control). OPC specifies the communication of real-time plant data between control devices from different manufacturers."
+		+'<br><br>'+
+		"After the initial release in 1996, the OPC Foundation was created to maintain the standard.[1] As OPC has been adopted beyond the field of process control, the OPC Foundation changed the name to Open Platform Communications in 2011.[2] The change in name reflects the applications of OPC technology for applications in building automation, discrete manufacturing, process control and many others. OPC has also grown beyond its original OLE (Object Linking and Embedding) implementation to include other data transportation technologies including Microsoft's .NET Framework, XML, and even the OPC Foundation's binary-encoded TCP format.",
+		links: "https://en.wikipedia.org/wiki/Open_Platform_Communications"
+	},
+	{
+		title: "Electronic control unit",
+		summary: "An Electronic Control Unit (ECU) is any embedded system in automotive electronics that controls one or more of the electrical systems or subsystems in a vehicle."
+		+'<br><br>'+
+		"Types of ECU include Engine Control Module (ECM), Powertrain Control Module (PCM), Transmission Control Module (TCM), Brake Control Module (BCM or EBCM), Central Control Module (CCM), Central Timing Module (CTM), General Electronic Module (GEM), Body Control Module (BCM), Suspension Control Module (SCM), control unit, or control module. Taken together, these systems are sometimes referred to as the car's computer (Technically there is no single computer but multiple ones.) Sometimes one assembly incorporates several of the individual control modules (PCM is often both engine and transmission)."
+		+'<br><br>'+
+		"Some modern motor vehicles have up to 80 ECUs. Embedded software in ECUs continues to increase in line count, complexity, and sophistication.[2] Managing the increasing complexity and number of ECUs in a vehicle has become a key challenge for original equipment manufacturers (OEMs).",
+		links: "https://en.wikipedia.org/wiki/Electronic_control_unit"
 	}
 ]
 

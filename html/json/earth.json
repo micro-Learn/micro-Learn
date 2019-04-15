@@ -13,6 +13,32 @@ var myData = [
 		title: "Inverted Earth",
 		summary: 'Inverted Earth is an imaginative concept in which the land and bodies of water are swapped with land becoming body of water and body of water becoming land. The current Earth comprises 29% land and 71% water, while Inverted Earth comprises 71% land and 29% water. On the inverted Earth, all the land are connected around the Earth, so people can walk to any point on the surface. When inverting the Earth, lakes become islands while rivers become a long, narrow strip of land. The mountains on real Earth would be trenches on Inverted Earth and vice versa. One of the prominent geological features on Inverted Earth is the Marianas Mountains, which would have the highest peak ("Challenger Peak" or "Mount Challenger") on Earth, even higher than Mount Everest. Another feature countering the last sentence is the Himalayas Trench, in which the Everest Deep is the deepest point on Inverted Earth.'+'<br><br>'+"The world climate on Inverted Earth would be much different than on the present Earth. Since bodies of water cover lot less area on top with tremendous distances from water, the amount of precipitation on Inverted Earth would be considerably less and deserts would cover much of the land area. Due to less precipitation, life would be more challenging to take hold.",
 		links: "https://en.wikipedia.org/wiki/Inverted_Earth"
+	},
+		title: "Deep carbon cycle",
+		summary: "The deep carbon cycle is the movement of carbon through the Earth's mantle and core. It forms part of the carbon cycle and is intimately connected to the movement of carbon in the Earth's surface and atmosphere. By returning carbon to the deep Earth, it plays a critical role in maintaining the terrestrial conditions necessary for life to exist. Without it, carbon would accumulate in the atmosphere, reaching extremely high concentrations over long periods of time."
+		+'<br><br>'+
+		"Because the deep Earth is inaccessible to drilling, not much is conclusively known about the role of carbon in it. Nonetheless, several pieces of evidence—many of which come from laboratory simulations of deep Earth conditions—have indicated mechanisms for the element's movement down into the lower mantle, as well as the forms that carbon takes at the extreme temperatures and pressures of this layer. Furthermore, techniques like seismology have led to greater understanding of the potential presence of carbon in the Earth's core. Studies of the composition of basaltic magma and the flux of carbon dioxide out of volcanoes reveals that the amount of carbon in the mantle is greater than that on the Earth's surface by a factor of one thousand.",
+		links: "https://en.wikipedia.org/wiki/Deep_carbon_cycle"
+	},
+		title: "Magmatic water",
+		summary: "Magmatic water or juvenile water is water that exists within, and in equilibrium with, a magma or water-rich volatile fluids that are derived from a magma. This magmatic water is released to the atmosphere during a volcanic eruption. Magmatic water may also be released as hydrothermal fluids during the late stages of magmatic crystallization or solidification within the Earth's crust. The crystallization of hydroxyl bearing amphibole and mica minerals acts to contain part of the magmatic water within a solidified igneous rock. Ultimate sources of this magmatic water includes water and hydrous minerals in rocks melted during subduction as well as primordial water brought up from the deep mantle.",
+		links: "https://en.wikipedia.org/wiki/Magmatic_water"
+	},
+		title: "Terrestrial Time",
+		summary: "Terrestrial Time (TT) is a modern astronomical time standard defined by the International Astronomical Union, primarily for time-measurements of astronomical observations made from the surface of Earth.[1] For example, the Astronomical Almanac uses TT for its tables of positions (ephemerides) of the Sun, Moon and planets as seen from Earth. In this role, TT continues Terrestrial Dynamical Time (TDT or TD),[2] which in turn succeeded ephemeris time (ET). TT shares the original purpose for which ET was designed, to be free of the irregularities in the rotation of Earth."
+		+'<br><br>'+
+		"The unit of TT is the SI second, the definition of which is currently based on the caesium atomic clock,[3] but TT is not itself defined by atomic clocks. It is a theoretical ideal, and real clocks can only approximate it."
+		+'<br><br>'+
+		"TT is distinct from the time scale often used as a basis for civil purposes, Coordinated Universal Time (UTC). TT indirectly underlies UTC, via International Atomic Time (TAI). Because of the historical difference between TAI and ET when TT was introduced, TT is approximately 32.184 s ahead of TAI.",
+		links: "https://en.wikipedia.org/wiki/Terrestrial_Time"
+	},
+		title: "Rare Earth hypothesis",
+		summary: "In planetary astronomy and astrobiology, the Rare Earth hypothesis argues that the origin of life and the evolution of biological complexity such as sexually reproducing, multicellular organisms on Earth (and, subsequently, human intelligence) required an improbable combination of astrophysical and geological events and circumstances."
+		+'<br><br>'+
+		'According to the hypothesis, complex extraterrestrial life is an improbable phenomenon and likely to be rare. The term "Rare Earth" originates from Rare Earth: Why Complex Life Is Uncommon in the Universe (2000), a book by Peter Ward, a geologist and paleontologist, and Donald E. Brownlee, an astronomer and astrobiologist, both faculty members at the University of Washington.'
+		+'<br><br>'+
+		"A contrary view was argued in the 1970s and 1980s by Carl Sagan and Frank Drake, among others. It holds that Earth is a typical rocky planet in a typical planetary system, located in a non-exceptional region of a common barred-spiral galaxy. Given the principle of mediocrity (in the same vein as the Copernican principle), it is probable that we are typical, and the universe teems with complex life. However, Ward and Brownlee argue that planets, planetary systems, and galactic regions that are as friendly to complex life as the Earth, the Solar System, and our galactic region are rare.",
+		links: "https://en.wikipedia.org/wiki/Rare_Earth_hypothesis"
 	}
 ]
 

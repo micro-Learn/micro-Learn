@@ -13,6 +13,40 @@ var myData = [
 		title: "Mathemagician",
 		summary: 'A mathemagician is a mathematician who is also a magician.'+'<br><br>'+'The name "mathemagician" was probably first applied to Martin Gardner, but has since been used to describe many mathematician/magicians, including Arthur T. Benjamin,[1] Persi Diaconis,[2] and Colm Mulcahy.[3] Diaconis has suggested that the reason so many mathematicians are magicians is that "inventing a magic trick and inventing a theorem are very similar activities."'+'<br><br>'+"A great number of self-working mentalism tricks rely on mathematical principles. Max Maven often utilizes this type of magic in his performance.",
 		links: "https://en.wikipedia.org/wiki/Mathemagician"
+	},
+		title: "Entertainment management",
+		summary: "Entertainment management is a relatively new business management discipline that is increasingly being taught as a Bachelor of Arts degree. Entertainment management courses aim to provide graduates with appropriate knowledge and skills to progress into management careers within the entertainment sector, managing facilities such as sport events, theme parks, theaters, cinemas, live music venues, museums, art galleries, broadcast media companies and night clubs."
+		+'<br><br>'+
+		"The Lubin School of Business at Pace University offers a BBA degree in management with a concentration in arts and entertainment."
+		+'<br><br>'+
+		"A number of master's-level programs have emerged recently, including Carnegie Mellon University's Master of Entertainment Industry Management – which offers students with undergraduate degrees in the film and television the opportunity to refocus their education on the management dimension of the work, or Northwestern University's Master of Science in Leadership for Creative Enterprises program, which offers students with backgrounds in visual, performing, or interactive arts with management and entrepreneurial skills."
+		+'<br><br>'+
+		"Growth in these courses has been linked with growth in both the creative and cultural industries. This growth is linked to increased consumer expenditure on recreation and entertainment activities. The result is a population assigning greater importance to the free time they have and a consequential willingness to spend more of their income on the 'experience' economy.",
+		links: "https://en.wikipedia.org/wiki/Entertainment_management"
+	},
+		title: "Ball pit",
+		summary: 'A ball pit (originally called "ball crawl" and also known as a ball pool or ball pond) is a padded box or pool filled with small colorful hollow plastic balls generally no larger than 3 inches (7.6 cm) in diameter. Instead of balls, other spherical objects can be used, such as balloons. It is typically employed as a recreation and exercise for children.'
+		+'<br><br>'+
+		"Ball pits are often found at nurseries, carnivals, amusement parks, fun centers, fast-food restaurants, and large video arcades. Chuck E. Cheese's and (now defunct) Discovery Zone formerly had ball pits and they were frequently incorporated into larger play structures, such as mazes, slides, and jungle gyms."
+		+'<br><br>'+
+		"Ball pits may be rented for parties, and smaller versions are sold for use in the home. While ball pits are traditionally intended for children, some are large enough to accommodate adults."
+		+'<br><br>'+
+		"Ball pits may be used together with a trampoline, or combining the two by filling a closed trampoline with the balls.",
+		links: "https://en.wikipedia.org/wiki/Ball_pit"
+	},
+		title: "Military-entertainment complex",
+		summary: "The military-entertainment complex is a concept relating to the cooperation between the military and entertainment industries to their mutual benefit, especially in such fields as cinema, multimedia and virtual reality."
+		+'<br><br>'+
+		"A related concept, the creative-industrial complex, describes the collaborative relationships between creative, industry, and military institutions for political and economic gain. An example of this in practice is Japan's Manga Military,[4] where the Self Defense Force uses affective cultural resources to shape public perceptions of the country's military establishment.",
+		links: "https://en.wikipedia.org/wiki/Military-entertainment_complex"
+	},
+		title: "Shadowgraphy (performing art)",
+		summary: 'Shadowgraphy or ombromanie is the art of performing a story or show using images made by hand shadows. It can be called "cinema in silhouette". Performers are titled as a shadowgraphist or shadowgrapher.'
+		+'<br><br>'+
+		"The art has declined since the late 19th century when electricity became available to homes because light bulbs and electric lamps do not give off good shadows and because cinema and television were becoming a new form of entertainment. Shadows are greatly defined by candlelight; therefore hand shadows were common in earlier centuries."
+		+'<br><br>'+
+		"The modern art of hand shadows was made popular by the French entertainer Félicien Trewey in the 19th century.[1] He popularized the art by making silhouettes of famous personalities.",
+		links: "https://en.wikipedia.org/wiki/Shadowgraphy_(performing_art)"
 	}
 ]
 
