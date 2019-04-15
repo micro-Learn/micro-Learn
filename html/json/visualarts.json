@@ -14,7 +14,7 @@ var myData = [
 		summary: "The phrase synesthesia in art has historically referred to a wide variety of artists' experiments that have explored the co-operation of the senses (e.g. seeing and hearing; the word synesthesia is from the Ancient Greek σύν (syn), 'together,' and αἴσθησις (aisthēsis), 'sensation') in the genres of visual music, music visualization, audiovisual art, abstract film, and intermedia (Campen 2007, Jewanski & Sidler 2006, Moritz 2003, 1999, Berman 1999, Maur 1999, Gage 1994, 1999). The age-old artistic views on synesthesia have some overlap with the current neuroscientific view on neurological synesthesia, but also some major differences, e.g. in the contexts of investigations, types of synesthesia selected, and definitions. While in neuroscientific studies synesthesia is defined as the elicitation of perceptual experiences in the absence of the normal sensory stimulation, in the arts the concept of synaesthesia is more often defined as the simultaneous perception of two or more stimuli as one gestalt experience (Campen 2009). The usage of the term synesthesia in art should, therefore, be differentiated from neurological synesthesia in scientific research. Synesthesia is by no means unique to artists or musicians. Only in the last decades have scientific methods become available to assess synesthesia in persons. For synesthesia in artists before that time one has to interpret (auto)biographical information. For instance, there has been debate on the neurological synesthesia of historical artists like Kandinsky and Scriabin (cf. Jewanski & Sidler 2006, Ione 2004, Dann 1999, Galeyev 2001). Additionally, Synesthetic art may refer to either art created by synesthetes or art created to elicit synesthetic experience in the general audience.",
 		links: "https://en.wikipedia.org/wiki/Synesthesia_in_art"
 	},
-		title: "Pastel",
+	{	title: "Pastel",
 		summary: "A pastel (UK: /ˈpæstəl/, US: /pæˈstɛl/) is an art medium in the form of a stick, consisting of pure powdered pigment and a binder. The pigments used in pastels are the same as those used to produce all colored art media, including oil paints; the binder is of a neutral hue and low saturation. The color effect of pastels is closer to the natural dry pigments than that of any other process."
 		+'<br><br>'+
 		"Pastels have been used by artists since the Renaissance, and gained considerable popularity in the 18th century, when a number of notable artists made pastel their primary medium."
@@ -22,17 +22,17 @@ var myData = [
 		"An artwork made using pastels is called a pastel (or a pastel drawing or pastel painting). Pastel used as a verb means to produce an artwork with pastels; as an adjective it means pale in color.",
 		links: "https://en.wikipedia.org/wiki/Pastel"
 	},
-		title: "Underdrawing",
+	{	title: "Underdrawing",
 		summary: "Underdrawing is a preparatory drawing done on a painting ground before paint is applied,[1] for example, an imprimatura or an underpainting. Underdrawing was used extensively by 15th century painters like Jan van Eyck and Rogier van der Weyden. These artists 'underdrew' with a brush, using hatching strokes for shading, using water-based black paint, before underpainting and overpainting with oils.[citation needed] Cennino D'Andrea Cennini (14th century most likely) describes a different type of underdrawing, made with graded tones rather than hatching, for egg tempera."
 		+'<br><br>'+
 		"In some cases, underdrawing can be clearly visualized using infrared reflectography because carbon black pigments absorb infrared light, whereas opaque pigments such as lead white are transparent with infrared light. Underdrawing in many works, for example, the Annunciation (van Eyck, Washington) or the Arnolfini Portrait, reveals that artists made alterations, sometimes radical ones, to their compositions.",
 		links: "https://en.wikipedia.org/wiki/Underdrawing"
 	},
-		title: "Masterpiece",
+	{	title: "Masterpiece",
 		summary: "Masterpiece, magnum opus (Latin, great work) or chef-d’œuvre (French, master of work, plural chefs-d’œuvre) in modern use is a creation that has been given much critical praise, especially one that is considered the greatest work of a person's career or to a work of outstanding creativity, skill, profundity, or workmanship. Historically, a 'masterpiece' was a work of a very high standard produced to obtain membership of a guild or academy in various areas of the visual arts and crafts.",
 		links: "https://en.wikipedia.org/wiki/Masterpiece"
 	},
-		title: "Art film",
+	{	title: "Art film",
 		summary: 'An art film is typically a serious, independent film, aimed at a niche market rather than a mass market audience.[1] It is "intended to be a serious, artistic work, often experimental and not designed for mass appeal",[2] "made primarily for aesthetic reasons rather than commercial profit",[3] and contains "unconventional or highly symbolic content".'
 		+'<br><br>'+
 		'Film critics and film studies scholars typically define an art film as possessing "formal qualities that mark them as different from mainstream Hollywood films".[5] These qualities can include (among other elements): a sense of social realism; an emphasis on the authorial expressiveness of the director; and a focus on the thoughts, dreams, or motivations of characters, as opposed to the unfolding of a clear, goal-driven story. Film scholar David Bordwell describes art cinema as "a film genre, with its own distinct conventions".'
