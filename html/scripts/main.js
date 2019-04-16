@@ -1,14 +1,11 @@
 var APIRoot = "http://www.micro-learn.xyz/php";
-var webRoot = "http://www.micro-learn.xyz";//file:///C:/Users/ariel/School/poosd/microlearning/website
+var webRoot = "http://www.micro-learn.xyz";
 var fileExtension = ".php";
 var userInfo = new Object();
 var userId = 0;
 var username = '';
 var password = '';
-var corgiGlobalUrl = '';
 var individualContact = null;
-var data = null;
-var maxNumOfArticles = 5;
 
 // Ensures that user cannot get to home before login
 $(document).ready(function() {
@@ -102,114 +99,6 @@ function fetchNewArticle(jsonSendObj)
     }
 }
 
-function fetchArticle(event)
-{
-	event.preventDefault();
-	var day = new Date();
-	var today = day.getDate();
-	
-	var currentUser = localStorage.getItem('currentUsername');
-	
-	var index = checkForDuplicates(currentUser);
-	
-	if ( data[index].lastArticleDate !== today ) {
-		data[index].numOfArticles = 0;
-		data[index].lastArticleDate = today;
-	}
-	
-	if ( data[index].numOfArticles >= maxNumOfArticles ) {
-        $('.alert').hide();
-        $("#articleLimitAlert").show();
-        return;
-	}
-	
-	if (receiveAlgorithm()) {
-		data[index].numOfArticles++;
-	}
-	
-	localStorage.setItem("allUsersInfo", JSON.stringify(data));
-}
-	
-function fetchExistingUser()
-{
-	var index = checkForDuplicates(document.getElementById("exampleInputEmail1").value);
-	if (index === -1){
-		return false;
-	}
-	
-	if(data[index].passwords === document.getElementById("exampleInputPassword1").value) {
-		localStorage.setItem("currentUsername", document.getElementById("exampleInputEmail1").value);
-		return true;
-	}
-	
-	return false;
-}
-
-function storeNewUser()
-{
-	var index = checkForDuplicates(document.getElementById("exampleInputEmail2").value);
-	if (index >= 0) {
-		return false;
-	}
-	
-	var userData = {
-		usernames: document.getElementById("exampleInputEmail2").value,
-		passwords: document.getElementById("exampleInputPassword2").value,
-		lastArticleDate: -1,
-		numOfArticles: 0
-	};
-	data.push(userData);
-	localStorage.setItem("allUsersInfo", JSON.stringify(data));
-	return true;
-}
-
-function checkForDuplicates(userName)
-{
-	var allUsersInfo = localStorage.getItem('allUsersInfo');
-	
-	// If no existing data, use the value by itself
-	// Otherwise, add the new value to it
-	data = allUsersInfo ? JSON.parse(allUsersInfo) : [];
-	
-	for (var i=0; i < data.length; i++) {
-        if (data[i].usernames === userName) {
-            return i;
-        }
-    }
-	return -1;
-}
-
-function receiveAlgorithm()
-{
-    var usersInterests = [];
-	var count = 0;
-	var checkedValue = null;
-	
-	var inputElements = document.getElementsByClassName('form-check-input');
-	for ( var i=0; inputElements[i]; i++ ) {
-		if (inputElements[i].checked) {
-			checkedValue = inputElements[i].value;
-			usersInterests.push(checkedValue);
-			count++;
-		}
-	}
-	
-	if (count === 0) {
-		return false;
-	}
-	
-	var index = Math.floor(Math.random() * count);
-	var interestCategory = usersInterests[index];
-	
-	var url = webRoot + '/json/' + interestCategory + '.json';
-	var script = document.createElement("script"); //Make a script DOM node
-    	script.src = url; //Set it's src to the provided URL
-   	document.head.appendChild(script);
-	
-	return true;
-}
-
-
 // Gets salt(s) for a username from the website API
 function fetchUserSalts(userName, callback)
 {
@@ -245,8 +134,8 @@ function fetchUserSalts(userName, callback)
 function createUser(userSalts)
 {
     var url = APIRoot + '/userAdd' + fileExtension;
-    var newUserName = document.getElementById("newUserName").value.trim();
-    var newPassword = document.getElementById("newPassword").value.trim();
+    var newUserName = document.getElementById("exampleInputEmail2").value.trim();
+    var newPassword = document.getElementById("exampleInputPassword2").value.trim();
 
     if (newUserName.length === 0 || newPassword.length === 0)
     {
@@ -305,8 +194,8 @@ function createUser(userSalts)
 function loginUser(userSalts)
 {
     var url = APIRoot + '/login' + fileExtension;
-    var userName = document.getElementById("username").value.trim();
-    var passWord = document.getElementById("password").value.trim();
+    var userName = document.getElementById("exampleInputEmail1").value.trim();
+    var passWord = document.getElementById("exampleInputPassword1").value.trim();
 
     if (userSalts.length === 0)
     {
@@ -381,19 +270,12 @@ function submitCreateUser(event)
         return;
     }
 	
-	if (!storeNewUser())
-    {
-        $('.alert').hide();
-        $("#duplicateUserNameAlert").show();
-        return;
-    }
-	
 	$('.alert').hide();
 	document.getElementById("myForm").reset();
 	$("#exampleModalCenter").modal("hide");
 	$('#createUserSuccessAlert').show();
 
-    fetchUserSalts(document.getElementById("newUserName").value, createUser);
+    fetchUserSalts(document.getElementById("exampleInputEmail2").value, createUser);
 }
 
 // Begins process of logging in by first getting any user salts for username
@@ -402,7 +284,7 @@ function submitLoginUser(event)
     event.preventDefault();
 	
     if (document.getElementById("exampleInputEmail1").value.length === 0 || document.getElementById("exampleInputPassword1").value.length === 0
-		|| !(exampleInputEmail1.checkValidity()) || !fetchExistingUser())
+		|| !(exampleInputEmail1.checkValidity()))
     {
         $('.alert').hide();
         $("#invalidLoginAlert").show();
@@ -410,10 +292,10 @@ function submitLoginUser(event)
     }
 	
 	
-	window.location.href = webRoot + '/main.html';//'file:///C:/Users/ariel/School/poosd/microlearning/website/main.html';
+	window.location.href = webRoot + '/main.html';
 	document.getElementById("myForm").reset();
 	
-    fetchUserSalts(document.getElementById("username").value, loginUser);
+    fetchUserSalts(document.getElementById("exampleInputEmail1").value, loginUser);
 }
 
 // Signs out user by deleting resetting local user information and redirects to login page.
@@ -421,7 +303,6 @@ function signOut()
 {
     username = '';
     userId = 0;
-	localStorage.setItem("currentUsername", null);
     window.name = '';
-    window.location.href = webRoot + '/index.html';//'file:///C:/Users/ariel/School/poosd/microlearning/website/index.html';
+    window.location.href = webRoot + '/index.html';
 }
